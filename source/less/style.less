@@ -1,0 +1,118 @@
+@mobile: ~"(max-width: 767px)";
+@tablet: ~"(min-width: 768px) and (max-width: 1199px)";
+@desktop: ~"(min-width: 1200px)";
+ 
+@import "normalize";
+
+// blocks style
+@import "blocks/main-header";
+@import "blocks/down-application";
+@import "blocks/oper-sistems";
+@import "blocks/main-info-pink";
+@import "blocks/main-price"; 
+
+// main variables
+body {
+    position: relative;
+    background-color: #000;
+    font-family: 'Open Sans', sans-serif;
+    color: #17181A;
+    font-weight: 400;
+    line-height: 1.2;
+    font-size: 16px;
+    min-width: 320px;
+}
+
+.container {
+	max-width: 100%;
+	width: 1170px;
+	margin: 0 auto;
+    position: relative;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media @mobile {
+    .container {
+        width: 100%;
+    }
+}
+
+@media @tablet {
+    .container {
+        width: 100%;
+    }
+}
+
+
+
+// 
+// ._container {
+//     max-width: @max-width + px;
+//     margin: 0 auto;
+//     @media (max-width: @md1+px){
+//         max-width: 970px;
+//     }
+//     @media (max-width: @md2+px){
+//         max-width: 750px;
+//     }
+//     @media (max-width: @md3+px){
+//         max-width: none;
+//         padding: 0 10px;
+//     }
+// }
+//
+//@min-width: 280px;
+//@max-width: 1200px;
+//@MaxWidthContainer: 856px;
+//@md1: @MaxWidthContainer + 12;
+//@md2: 991.98;
+//@md3: 767.98;
+//@md4: 479.98; 
+
+//
+//Burger
+// .icon-menu {
+//     display: none;
+//     @media (max-width: px) {
+//         display: block;
+//         position: absolute;
+//         top: 18px;
+//         right: 10px;
+//         width: 30px;
+//         height: 18px;
+//         cursor: pointer; 
+//         z-index: 5;
+//         span {
+//             transition: all 0.3s ease 0s;
+//             top: cals(50% - 1px);
+//             left: 0px;
+//             width: 100%;
+//             height: 2px;
+//             background-color: #000;
+//             &:first-child {
+//              top: 0px;   
+//             }
+//             &:last-child {
+//                 top: auto;
+//                 bottom: 0px;
+//             }
+//         }
+//         &._active {
+//             span {
+//                 transform: scale(0);
+//                 &:first-child {
+//                     transform: rotate(-45deg);
+//                     top: calc(50% - 1px);
+//                 }
+//                 &:last-child {
+//                     transform: rotate(45deg);
+//                     bottom: calc(50% - 1px);
+//                 }
+//             }
+//         }
+//     }
+// }
