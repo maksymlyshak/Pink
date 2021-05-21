@@ -309,7 +309,7 @@ template {
 }
 .main-header {
   position: absolute;
-  min-width: 100%;
+  width: 100%;
   top: 0;
   left: 0;
   z-index: 10;
@@ -320,8 +320,9 @@ template {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -335,7 +336,6 @@ template {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 0 auto;
 }
 .main-header__nav-links {
   display: -webkit-box;
@@ -350,52 +350,26 @@ template {
   color: #fff;
 }
 .main-header__nav-links-item {
-  margin-left: 85px;
+  margin-right: 85px;
 }
 .main-header__nav-links a {
   text-decoration: none;
   color: #fff;
 }
-.main-header__nav-links-item:nth-child(1) {
-  margin-left: 175px;
+.main-header__nav-links-item:last-child {
+  margin-right: 0;
 }
 .main-header__nav-toggle {
   border: 0 solid #fff;
   background-color: #11181e;
 }
-.main-header__menu-mobile {
-  position: absolute;
-  width: 100%;
-  text-transform: uppercase;
-  padding: 0;
-  list-style-type: none;
-}
-.main-header__menu-mobile a {
-  color: #fff;
-  text-decoration: none;
-}
-.main-header__menu-mobile-tb {
-  border-bottom: 1px solid #485461;
-  border-top: 1px solid #485461;
-  background-color: #283645;
-  text-align: center;
-  padding: 25px 120px;
-}
 @media (max-width: 767px) {
   .main-header {
-    top: 135px;
-    background-color: #283645;
-  }
-  .main-header__logos {
-    display: block;
-    position: absolute;
-    bottom: 150px;
     width: 100%;
-    height: 70px;
-    background-color: #283645;
+    background-color: rgba(28, 37, 48, 0.8);
   }
-  .main-header__logo-mobile img {
-    padding: 20px 0 0 20px;
+  .main-header__wrapper {
+    width: 100%;
   }
   .main-header__logo-tablet {
     display: none;
@@ -406,41 +380,10 @@ template {
   .main-header__nav-links {
     display: none;
   }
-  .main-header__menu {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .main-header__menu-mobile {
-    display: block;
-    position: absolute;
-    bottom: -150px;
-  }
 }
 @media (min-width: 768px) and (max-width: 1199px) {
   .main-header {
-    top: 205px;
-    background-color: #283645;
-  }
-  .main-header__logos {
-    display: block;
-    position: absolute;
-    bottom: 180px;
-    border-bottom: 1 solid #283645;
-    width: 100%;
-    height: 110px;
-    background-color: #283645;
-  }
-  .main-header__logo-tablet img {
-    padding: 20px 0 0 20px;
-  }
-  .main-header__menu-mobile {
-    display: block;
-    position: absolute;
-    bottom: -120px;
+    background-color: rgba(28, 37, 48, 0.8);
   }
   .main-header__logo-mobile {
     display: none;
@@ -472,7 +415,7 @@ template {
 .down-application {
   width: 100%;
   height: 100%;
-  background-image: url(../../img/back-desktop.jpg);
+  background-image: url(/img/back-desktop.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 0 0;
@@ -760,6 +703,14 @@ template {
   border-radius: 2px;
   color: #283645;
 }
+.second-menu {
+  position: absolute;
+  display: block;
+}
+.second-menu__list {
+  margin: 0;
+  padding: 0;
+}
 body {
   position: relative;
   background-color: #000;
@@ -774,6 +725,7 @@ body {
   max-width: 100%;
   width: 1170px;
   margin: 0 auto;
+  padding: 0 20px;
   position: relative;
 }
 img {
@@ -783,10 +735,17 @@ img {
 @media (max-width: 767px) {
   .container {
     width: 100%;
+    padding: 0 20px;
   }
 }
 @media (min-width: 768px) and (max-width: 1199px) {
   .container {
     width: 100%;
+    padding: 0 20px;
+  }
+}
+@media (min-width: 1200px) {
+  .second-menu {
+    display: none;
   }
 }

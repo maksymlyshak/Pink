@@ -10,6 +10,7 @@
 @import "blocks/oper-sistems";
 @import "blocks/main-info-pink";
 @import "blocks/main-price"; 
+@import "blocks/menu-mobile";
 
 // main variables
 body {
@@ -27,6 +28,7 @@ body {
 	max-width: 100%;
 	width: 1170px;
 	margin: 0 auto;
+    padding: 0 20px;
     position: relative;
 }
 
@@ -38,12 +40,20 @@ img {
 @media @mobile {
     .container {
         width: 100%;
+        padding: 0 20px;
     }
 }
 
 @media @tablet {
     .container {
         width: 100%;
+        padding: 0 20px;
+    }
+}
+
+@media @desktop {
+    .second-menu {
+        display: none;
     }
 }
 
