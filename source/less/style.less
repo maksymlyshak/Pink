@@ -3,6 +3,7 @@
 @desktop: ~"(min-width: 1200px)";
  
 @import "normalize";
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 // blocks style
 @import "blocks/main-header";
@@ -10,7 +11,6 @@
 @import "blocks/oper-sistems";
 @import "blocks/main-info-pink";
 @import "blocks/main-price"; 
-@import "blocks/menu-mobile";
 
 // main variables
 body {
@@ -39,21 +39,29 @@ img {
 
 @media @mobile {
     .container {
-        width: 100%;
+        width: 280px;
+        margin: 0 auto;
         padding: 0 20px;
+        position: relative;
     }
-}
+} 
 
 @media @tablet {
     .container {
-        width: 100%;
+	    width: 660px;
+	    margin: 0 auto;
         padding: 0 20px;
+        position: relative;
     }
 }
 
 @media @desktop {
-    .second-menu {
-        display: none;
+    .container{
+        max-width: 100%;
+        width: 1170px;
+        margin: 0 auto;
+        padding: 0 20px;
+        position: relative;  
     }
 }
 

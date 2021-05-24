@@ -307,6 +307,13 @@ template {
 [hidden] {
   display: none;
 }
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v27/KFOmCnqEu92Fr1Me5Q.ttf) format('truetype');
+}
 .main-header {
   position: absolute;
   width: 100%;
@@ -383,6 +390,7 @@ template {
 }
 @media (min-width: 768px) and (max-width: 1199px) {
   .main-header {
+    width: 100%;
     background-color: rgba(28, 37, 48, 0.8);
   }
   .main-header__logo-mobile {
@@ -415,16 +423,16 @@ template {
 .down-application {
   width: 100%;
   height: 100%;
-  background-image: url(/img/back-desktop.jpg);
+  background-image: url(../../img/back-desktop.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 0 0;
   color: #fff;
 }
 .down-application__info {
-  max-width: 300px;
+  position: relative;
+  width: 300px;
   padding-top: 200px;
-  padding-bottom: 130px;
 }
 .down-application__info-title {
   font-size: 50px;
@@ -432,6 +440,7 @@ template {
   line-height: 60px;
   color: #fff;
   text-align: center;
+  margin-top: 0;
 }
 .down-application__info-button {
   width: 100%;
@@ -440,21 +449,31 @@ template {
   background-color: transparent;
   border-radius: 32px;
   border: 2px solid #fff;
+  margin-bottom: 65px ;
+  font-size: 18px;
+  font-weight: bold;
 }
 .down-application__photos-mobile {
   position: absolute;
-  bottom: 0;
+  top: 170px;
   left: 0px;
   max-width: 100%;
   max-height: 100%;
-  margin: 0 auto;
+}
+.down-application__photos-mobile img {
+  z-index: 1000;
 }
 .down-application__photos-tablet {
   position: absolute;
   bottom: 0;
   max-width: 100%;
   max-height: 100%;
+  width: 1045px;
   margin: 0 auto;
+  background-repeat: no-repeat;
+}
+.down-application__photos-tablet img {
+  z-index: 1000;
 }
 .down-application__photos-desktop {
   position: absolute;
@@ -463,15 +482,29 @@ template {
   max-width: 100%;
   max-height: 100%;
   margin: 0 auto;
+  background-repeat: no-repeat;
 }
 @media (max-width: 767px) {
   .down-application {
+    height: 460px;
     background-position: center;
   }
-  .down-application__photos-tablet img {
+  .down-application__info {
+    position: absolute;
+    left: 0;
+    top: 460px;
+    max-width: 100%;
+    width: 320px;
+    background-color: #1d2631;
+    padding: 30px 0 0 0;
+  }
+  .down-application__info-title {
     display: none;
   }
-  .down-application__photos-desktop img {
+  .down-application__photos-tablet {
+    display: none;
+  }
+  .down-application__photos-desktop {
     display: none;
   }
 }
@@ -479,18 +512,21 @@ template {
   .down-application {
     background-position: center;
   }
-  .down-application__photos-mobile img {
+  .down-application__photos-tablet {
+    overflow: hidden ;
+  }
+  .down-application__photos-mobile {
     display: none;
   }
-  .down-application__photos-desktop img {
+  .down-application__photos-desktop {
     display: none;
   }
 }
 @media (min-width: 1200px) {
-  .down-application__photos-mobile img {
+  .down-application__photos-mobile {
     display: none;
   }
-  .down-application__photos-tablet img {
+  .down-application__photos-tablet {
     display: none;
   }
 }
@@ -504,9 +540,10 @@ template {
       -ms-flex-align: center;
           align-items: center;
   padding: 0;
-  margin-top: 65px;
+  margin-top: 0;
   margin-bottom: 60px;
   list-style-type: none;
+  z-index: 1;
 }
 .oper-sistems__info {
   color: #fff;
@@ -514,10 +551,18 @@ template {
   line-height: 24px;
   text-align: center;
   opacity: 0.7;
+  z-index: 1;
+  margin: 0;
+  padding-bottom: 120px;
 }
 .oper-sistems__img div {
   width: 100%;
   height: 400px;
+}
+@media (max-width: 767px) {
+  .oper-sistems {
+    background-color: #1d2631;
+  }
 }
 .main-info-pink {
   width: 100%;
@@ -703,14 +748,6 @@ template {
   border-radius: 2px;
   color: #283645;
 }
-.second-menu {
-  position: absolute;
-  display: block;
-}
-.second-menu__list {
-  margin: 0;
-  padding: 0;
-}
 body {
   position: relative;
   background-color: #000;
@@ -734,18 +771,26 @@ img {
 }
 @media (max-width: 767px) {
   .container {
-    width: 100%;
+    width: 280px;
+    margin: 0 auto;
     padding: 0 20px;
+    position: relative;
   }
 }
 @media (min-width: 768px) and (max-width: 1199px) {
   .container {
-    width: 100%;
+    width: 660px;
+    margin: 0 auto;
     padding: 0 20px;
+    position: relative;
   }
 }
 @media (min-width: 1200px) {
-  .second-menu {
-    display: none;
+  .container {
+    max-width: 100%;
+    width: 1170px;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative;
   }
 }
