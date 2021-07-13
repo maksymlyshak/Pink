@@ -102,3 +102,70 @@
     }
 
 }
+
+@media @mobile {
+    .main-price {
+        &__users-comments {
+            position: relative;
+            bottom: 100px;
+            display: flex;
+            flex-direction: column-reverse;
+            &__slider {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-self: center;
+                align-items: center;
+                width: 60px;
+                .slider-buttons {
+                border: 0 solid #fff;
+                padding: 0;
+                }
+            }
+        }
+        &__users-comments-brackets {
+            display: none;
+        }
+        &__user-comments {
+            &__com-info {
+                font-size: 14px;
+                line-height: 30px;
+            }
+            &__com-left-button {
+                display: none;
+            }
+            &__com-right-button {
+                display: none;
+                 }
+            &__com-person {
+                &__info {
+                    font-size: 18px;
+                    line-height: 30px;
+                    margin-top: 0;
+                }
+                &__info-ab {
+                    display: none;
+                }
+            }
+        }
+        &__table {
+            display: none;
+        }
+    }
+}
+
+@media @tablet {
+    .main-price {
+        display: none;
+    }
+}
+
+@media @desktop {
+    .main-price {
+        &__users-comments {
+            &__slider {
+                display: none;
+            }
+        }
+    }
+}
