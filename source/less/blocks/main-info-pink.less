@@ -1,5 +1,3 @@
-
-
 .main-info-pink {
     width: 100%;
     height: 100%;
@@ -49,6 +47,9 @@
     &__ab-programm-iPhone-6-img {
         position: relative;
     }
+    &__ab-programm-iPhone-6-big {
+        position: relative;
+    }
     &__more-info {
         display: flex;
         align-items: center;
@@ -68,5 +69,46 @@
     }
     &__more-info__effects-link {
         color: #d22856;  
+    }
+}
+
+@media @mobile {
+    .main-info-pink {
+        &__content {
+            margin-top: 287px;
+        }
+        &__ab-programm-info {
+            display: none;
+        }
+    }
+}
+
+@media @tablet {
+    .main-info-pink {
+        &__ab-programm-info {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            width: 320px;
+            height: 265px;
+            padding-top: 120px;
+          h2 {
+              font-size: 18px;
+              line-height: 24px;
+          }  
+          p {
+              font-size: 14px;
+              line-height: 24px;
+          }
+        }
+        &__ab-programm-iPhone-6-img {
+            display: none;
+            }
+    }
+}
+
+@media @desktop {
+    .main-info-pink {
+        display: none ;
     }
 }
