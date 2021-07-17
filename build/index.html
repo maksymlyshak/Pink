@@ -135,7 +135,7 @@
              </div>
         
     </section>
-<section class="main-price">
+    <section class="main-price">
     <div class="container">
         <div class="main-price__users-comments">
             <div class="main-price__users-comments-brackets">
@@ -160,18 +160,19 @@
                 <p class="main-price__user-comments__com-person__info-ab">
                     25лет, водитель трамвая
                 </p>
-                <div class="main-price__users-comments__slider">
-                    <button class="slider-buttons active-sld-btn">
-                        <img src="img/act-sld-btn.png" alt="sld-btn">
-                    </button>
-                    <button class="slider-buttons">
-                        <img src="img/unactive-sld-btn.png" alt="sld-btn">
-                    </button>
-                    <button class="slider-buttons">
-                        <img src="img/unactive-sld-btn.png" alt="sld-btn">
-                    </button>
-                    
-            </div>
+        </div>
+        <div class="main-price__slider">
+            <ul class="main-price__slider-btns">
+                <li class="main-price__slider-btn">
+                    <input class="slider-btn-radio-act" name="radio-sld-btn" type="radio" checked="">
+                </li>
+                <li class="main-price__slider-btn">
+                    <input class="slider-btn-radio-unact" name="radio-sld-btn" type="radio">
+                </li>
+                <li class="main-price__slider-btn">
+                    <input class="slider-btn-radio-unact" name="radio-sld-btn" type="radio">
+                </li>
+            </ul>
         </div>
     </div>
         <div class="main-price__table">
@@ -217,8 +218,80 @@
                     </tr>
                 </tbody>
             </table>
+            <div class="main-price__slider">
+                <ul class="main-price__slider-btns">
+                    <li class="main-price__slider-btn">
+                        <input class="slider-btn-radio-act" name="radio-sld-btn" type="radio" checked="">
+                    </li>
+                    <li class="main-price__slider-btn">
+                        <input class="slider-btn-radio-unact" name="radio-sld-btn" type="radio">
+                    </li>
+                    <li class="main-price__slider-btn">
+                        <input class="slider-btn-radio-unact" name="radio-sld-btn" type="radio">
+                    </li>
+                </ul>
+            </div>
         </div>
         </div>
-     </section>  
+    </section>
+    <footer class="main-footer">
+        <div class="container">
+            <div class="main-footer__contacts">
+                <h2 class="main-footer__questions">
+                    Остались вопросы?<br>
+                    Свяжитесь с нами!
+                </h2>
+                <div class="main-footer__main-contacts">
+                    <h4><span>Звоните:</span></h4>
+                    <p class="main-footer__main-contacts__info">+7 (812) 555-66-66</p>
+                    <h4><span>Пишите:</span></h4>
+                    <p class="main-footer__main-contacts__info">mail@htmlacademy.ru</p>
+                    <h4><span>Приезжайте в гости:</span></h4>
+                    <p class="main-footer__main-contacts__info">ул. Большая<br>
+                                                            Конюшенная, 19/8</p>  
+                 </div> 
+            </div>
+        </div>                
+            <img class="main-footer__tringle" src="img/triangle-white-footer.svg.png" alt="^">
+                <div class="main-footer__map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sua!4v1626366562278!5m2!1sru!2sua" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+        <div class="main-footer__bottom">
+            <div class="container">
+                <div class="main-footer__bottom-block">
+                    <div class="main-footer__bottom-logo">
+                        <img class="main-footer__bottom-logo__tablet" src="img/logotype-blue-tablet.svg.png" alt="logo">
+                        <img class="main-footer__bottom-logo__desktop" src="img/logotype-blue-desktop.svg.png" alt="logo">
+                    </div>
+                    <div class="main-footer__bottom-social">
+                        <ul class="main-footer__bottom-social__lists">
+                            <li class="main-footer__bottom-social__list">
+                                <a class="social__list-link" href="#">
+                                    <span class="link__img">
+                                        <img src="img/twitter.svg" alt="twitter">
+                                    </span>
+                                </a></li>
+                            <li class="main-footer__bottom-social__list">
+                                <a class="social__list-link" href="#">
+                                    <span class="link__img">
+                                        <img src="img/facebook.svg" alt="facebook">
+                                    </span>
+                                </a></li>
+                            <li class="main-footer__bottom-social__list">
+                                <a class="social__list-link" href="#">
+                                    <span class="link__img">
+                                        <img src="img/youtube.svg" alt="youtube">
+                                    </span>
+                                </a></li>    
+                        </ul>
+                    </div>
+                    <div class="main-footer__bottom-developed">
+                        <p>Разработано</p>
+                        <img src="img/htmlacademy.svg" alt="htmlacademy">  
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
