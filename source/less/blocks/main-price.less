@@ -116,11 +116,16 @@
             justify-content: center;
         }
         &__slider-btns {
-            width: 60px;
+            width: 80px;
             display: flex;
             justify-content: space-between;
             align-items: center;
             padding: 0;
+        }
+        .slider-toggle {
+            border: 0 solid #fff;
+            background-color: #fff;
+            text-align: center;
         }
         &__users-comments-brackets {
             display: none;
@@ -149,9 +154,10 @@
         }
         &__table {
             display: none;
+            position: relative;
         }
         &__table-info {
-            position: relative;
+            position: absolute;
             left: -350px;
             width: 100%;
             margin: 0 auto;
@@ -161,16 +167,20 @@
 
 @media @tablet {
     .main-price {
-        display: none;
+        &__table {
+            width: 620px;
+            display: block;
+        }
+        &__slider {
+            display: none;
+        }
     }
 }
 
 @media @desktop {
     .main-price {
-        &__users-comments {
-            &__slider {
-                display: none;
-            }
+        &__slider {
+            display: none;
         }
     }
 }
