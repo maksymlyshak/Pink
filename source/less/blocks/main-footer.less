@@ -8,6 +8,7 @@
         font-size: 50px;
         opacity: 0.8;
         font-weight: lighter;
+        text-align: center;
     }
     &__main-contacts {
         display: flex;
@@ -24,6 +25,8 @@
             color: #d22856;
             margin: 0;
             text-align: center;
+            list-style: none;
+            text-decoration: none;
         }
         &__map {       
             overflow: hidden;
@@ -64,15 +67,22 @@
                 padding: 0;
             }
             &__list {
-                background-color: #e9ebec;
+                display: flex;
+                align-items: center;
+                justify-content: center;
                 border: 2px solid #e9ebec;
                 border-radius: 50%;
                 width: 50px;
                 height: 50px;
+                cursor: pointer;
             }
         }
         &__bottom-developed {
+            width: 140px;
             display: flex;
+            justify-content: space-between;
+            align-items: center;
+            align-self: center;
             
         }
     
@@ -80,6 +90,20 @@
 
 @media @mobile {
     .main-footer {
+        &__questions {
+            font-size: 24px;
+            font-weight: lighter;
+        }
+        &__main-contacts {
+            h4 {
+               font-size: 18px;
+               font-weight: bold; 
+            }
+            &__info {
+                font-size: 24px;
+                font-weight: lighter;
+            }
+        }
         &__bottom {
         display: none;
         }
