@@ -78,6 +78,9 @@
             display: flex;
             flex-direction: column;
         }
+        &__ab-programm-tablet {
+            display: none;
+        }
         &__content {
             margin-top: 287px;
             h2 {
@@ -132,26 +135,37 @@
 
 @media @tablet {
     .main-info-pink {
+        &__ab-programm {
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            right: 0;
+            top: 420px;
+        }   
         &__ab-programm-info {
             display: flex;
             flex-direction: column;
-            align-items: flex-end;
+            align-items: flex-start;
             width: 320px;
-            height: 265px;
+            height: 40px;
             padding-top: 120px;
           h2 {
+              width: 225px;
               font-size: 18px;
               line-height: 24px;
+              text-align: start;
           }  
           p {
+              width: 300px;
               font-size: 14px;
               line-height: 24px;
-          }
+              text-align: start;
+              white-space: pre-line;
+            }
         }
         &__ab-programm-iPhone-6-img {
-            display: none;
-            }
-        &__ab-programm-iPhone-6-img-last {
             display: none;
         }
     }
@@ -159,9 +173,19 @@
 
 @media @desktop {
     .main-info-pink {
-        display: none ;
-    }
-    &__ab-programm-iPhone-6-img-last {
-        display: none;
+        &__ab-programm-info {
+            h2 {
+                width: 200px;
+                margin: 0 auto;
+                margin-bottom: 20px;
+            }
+            p {
+                width: 240px;
+                margin: 0 auto;
+            }
+        }
+        &__ab-programm-tablet {
+            display: none;
+        }
     }
 }

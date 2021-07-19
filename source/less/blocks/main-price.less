@@ -41,7 +41,6 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        padding-top: 200px;
         background-image: url(../img/Shape\ 2\ copy.png);
         background-repeat: no-repeat;
         background-size: cover;
@@ -101,6 +100,9 @@
         border-radius: 2px;
         color: #283645; 
     }
+    &__slider {
+        margin-bottom: 200px;;
+    }
 
 }
 
@@ -114,6 +116,7 @@
         &__slider {
             display: flex;
             justify-content: center;
+            margin: 0;
         }
         &__slider-btns {
             width: 80px;
@@ -124,8 +127,8 @@
         }
         .slider-toggle {
             border: 0 solid #fff;
-            background-color: #fff;
             text-align: center;
+            border-radius: 50%;
         }
         &__users-comments-brackets {
             display: none;
@@ -167,11 +170,47 @@
 
 @media @tablet {
     .main-price {
-        &__table {
-            width: 620px;
-            display: block;
+        &__user-comments {
+            &__com-person {
+                &__info-ab {
+                    margin-bottom: 45px;
+                }
+            }
+            &__com-left-button {
+                display: none;
+            }
+            &__com-right-button {
+                display: none;
+            }
+        }
+        &__users-comments-brackets {
+            display: none;
+        }
+        &__table-info {
+            width: 100%;
+            display: none;
+            position: relative;
+            margin: 0 0 40px 0;
         }
         &__slider {
+            display: flex;
+            justify-content: center;
+            margin: 0;
+        }
+        &__slider-btns {
+            width: 80px;
+            display: flex;
+            justify-content: space-between;
+            margin: 0;
+            padding: 0;
+        }
+        &__slider-btn {
+            .slider-toggle {
+                border: 0 solid #fff;
+                border-radius: 50%;
+            }
+        }
+        &__table {
             display: none;
         }
     }
@@ -179,6 +218,13 @@
 
 @media @desktop {
     .main-price {
+        &__user-comments {
+            &__com-person {
+                &__info-ab {
+                    margin: 0 0 200px 0 ;
+                }
+            }
+        }
         &__slider {
             display: none;
         }

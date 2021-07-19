@@ -660,6 +660,9 @@ template {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .main-info-pink__ab-programm-tablet {
+    display: none;
+  }
   .main-info-pink__content {
     margin-top: 287px;
   }
@@ -725,6 +728,24 @@ template {
   }
 }
 @media (min-width: 768px) and (max-width: 1199px) {
+  .main-info-pink__ab-programm {
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    right: 0;
+    top: 420px;
+  }
   .main-info-pink__ab-programm-info {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -733,33 +754,41 @@ template {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     width: 320px;
-    height: 265px;
+    height: 40px;
     padding-top: 120px;
   }
   .main-info-pink__ab-programm-info h2 {
+    width: 225px;
     font-size: 18px;
     line-height: 24px;
+    text-align: start;
   }
   .main-info-pink__ab-programm-info p {
+    width: 300px;
     font-size: 14px;
     line-height: 24px;
+    text-align: start;
+    white-space: pre-line;
   }
   .main-info-pink__ab-programm-iPhone-6-img {
     display: none;
   }
-  .main-info-pink__ab-programm-iPhone-6-img-last {
-    display: none;
-  }
 }
 @media (min-width: 1200px) {
-  .main-info-pink {
-    display: none ;
+  .main-info-pink__ab-programm-info h2 {
+    width: 200px;
+    margin: 0 auto;
+    margin-bottom: 20px;
   }
-  __ab-programm-iPhone-6-img-last {
+  .main-info-pink__ab-programm-info p {
+    width: 240px;
+    margin: 0 auto;
+  }
+  .main-info-pink__ab-programm-tablet {
     display: none;
   }
 }
@@ -819,7 +848,6 @@ template {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 200px;
   background-image: url(../img/Shape\ 2\ copy.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -875,6 +903,9 @@ template {
   border-radius: 2px;
   color: #283645;
 }
+.main-price__slider {
+  margin-bottom: 200px;
+}
 @media (max-width: 767px) {
   .main-price__users-comments {
     bottom: 100px;
@@ -893,6 +924,7 @@ template {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    margin: 0;
   }
   .main-price__slider-btns {
     width: 80px;
@@ -909,8 +941,8 @@ template {
   }
   .main-price .slider-toggle {
     border: 0 solid #fff;
-    background-color: #fff;
     text-align: center;
+    border-radius: 50%;
   }
   .main-price__users-comments-brackets {
     display: none;
@@ -945,15 +977,56 @@ template {
   }
 }
 @media (min-width: 768px) and (max-width: 1199px) {
-  .main-price__table {
-    width: 620px;
-    display: block;
+  .main-price__user-comments__com-person__info-ab {
+    margin-bottom: 45px;
+  }
+  .main-price__user-comments__com-left-button {
+    display: none;
+  }
+  .main-price__user-comments__com-right-button {
+    display: none;
+  }
+  .main-price__users-comments-brackets {
+    display: none;
+  }
+  .main-price__table-info {
+    width: 100%;
+    display: none;
+    position: relative;
+    margin: 0 0 40px 0;
   }
   .main-price__slider {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0;
+  }
+  .main-price__slider-btns {
+    width: 80px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 0;
+    padding: 0;
+  }
+  .main-price__slider-btn .slider-toggle {
+    border: 0 solid #fff;
+    border-radius: 50%;
+  }
+  .main-price__table {
     display: none;
   }
 }
 @media (min-width: 1200px) {
+  .main-price__user-comments__com-person__info-ab {
+    margin: 0 0 200px 0 ;
+  }
   .main-price__slider {
     display: none;
   }
@@ -1097,21 +1170,82 @@ template {
   .main-footer__main-contacts h4 {
     font-size: 18px;
     font-weight: bold;
+    text-align: center;
   }
   .main-footer__main-contacts__info {
     font-size: 24px;
     font-weight: lighter;
+    text-align: center;
+  }
+  .main-footer__main-contacts-blk {
+    text-align: center;
+  }
+  .main-footer__main-contacts-desktop {
+    display: none;
   }
   .main-footer__bottom {
     display: none;
   }
 }
 @media (min-width: 768px) and (max-width: 1199px) {
+  .main-footer__questions {
+    font-size: 40px;
+    font-weight: lighter;
+  }
   .main-footer__bottom-logo__desktop {
+    display: none;
+  }
+  .main-footer__main-contacts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    text-align: center;
+  }
+  .main-footer__main-contacts-blk h4 {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .main-footer__main-contacts-blk a {
+    font-size: 24px;
+    font-weight: 400;
+  }
+  .main-footer__main-contacts-blk:nth-child(3) {
+    margin-top: 40px;
+  }
+  .main-footer__main-contacts-desktop {
     display: none;
   }
 }
 @media (min-width: 1200px) {
+  .main-footer__questions {
+    margin-bottom: 20px;
+  }
+  .main-footer__main-contacts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  .main-footer__main-contacts-blk {
+    display: none;
+  }
   .main-footer__bottom-logo__tablet {
     display: none;
   }
@@ -1125,9 +1259,6 @@ body {
   line-height: 1.2;
   font-size: 16px;
   width: 100%;
-}
-a {
-  text-decoration: none;
 }
 .container {
   max-width: 100%;
