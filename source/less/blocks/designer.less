@@ -1,0 +1,53 @@
+.designer {
+    &__tools {
+        width: 200px;
+        margin: 0 auto;
+    }
+    &__tools-buttons {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__tools-buttons-btn {
+        border: 0 solid #fff;
+        cursor: pointer;
+        background-color: #fff;
+    }
+}
+
+@media @mobile {
+    .designer {
+        &__photo {
+            margin: 0 0 45px 0;
+        }
+        &__photo-tablet {
+            display: none;
+        }
+        &__photo-desktop {
+            display: none;
+        }
+    }
+}
+
+@media @tablet {
+    .designer {
+        &__photo-mobile {
+            display: none;
+        }
+        &__photo-desktop {
+            display: none;
+        }
+    }
+}
+
+@media @desktop {
+    .designer {
+        &__photo-mobile {
+            display: none;
+        }
+        &__photo-tablet {
+            display: none;
+        }
+    }
+}

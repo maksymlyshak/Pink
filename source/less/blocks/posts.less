@@ -10,6 +10,7 @@
     &__panorama-photo {
         width: 100%;
         height: 100%;
+        margin: 0 0 20px 0;
     }
     &__panorama-day {
         display: none;
@@ -26,8 +27,119 @@
         line-height: 24px;
         font-weight: bold;
     }
+    &__post-info {
+        .description {
+            margin-bottom: 25px;
+        }       
+        &__bottom {
+            display: flex;
+            flex-direction: row;
+            align-items: baseline;
+            text-transform: uppercase;
+            text-align: center;
+            color: #d22856;
+            span {
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: baseline;
+            text-align: center;
+            color: #d22856;
+            margin-bottom: 40px;
+            p {
+                font-size: 12px;
+                line-height: 24px;
+            }
+            img {
+                margin: 0 20px 0 0;
+            }
+            }
+        }
+        p {
+            font-size: 14px;
+            line-height: 24px;
+        }
+    }
+    &__post-tablet {
+        strong {
+            font-size: 14px;
+            line-height: 24px;
+        }
+        .time {
+            font-size: 12px;
+            font-weight: lighter;
+            opacity: 0.8;
+        }
+        .like-tablet-panorama {
+            display: flex;
+            flex-direction: row;
+            align-items: baseline;
+            font-size: 12px;
+            line-height: 24px;
+            text-transform: uppercase;
+            text-align: center;
+            color: #d22856;
+            margin-bottom: 40px;
+            img {
+                margin: 0 20px 0 0;
+            }
+        }
+        p {
+            margin-bottom: 25px;
+        }
+    }
+    &__post-flex {
+        strong {
+            font-size: 14px;
+            line-height: 24px;
+        }
+        .time {
+            font-size: 12px;
+            font-weight: lighter;
+            opacity: 0.8;
+        }
+    }
+    &__info {
+        p {
+        font-size: 14px;
+        line-height: 24px;
+        }
+    }
 }
 
 @media @mobile {
+ .posts {
+     &__post-photo {
+        .post-photo-tablet {
+            display: none;
+            }
+           .post-photo-desktop {
+            display: none;
+            }
+        }
+    }
+}
+@media @tablet {
+ .posts {
+     &__post-photo {
+        .post-photo-mobile {
+             display: none;
+            }
+        .post-photo-desktop {
+            display: none;
+            }
+        }
+    }
+}
 
+@media @desktop {
+ .posts {
+     &__post-photo {
+         .post-photo-mobile {
+             display: none;
+            }
+            .post-photo-tablet {
+                display: none;
+            }
+        }
+    }    
 }

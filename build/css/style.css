@@ -1272,6 +1272,11 @@ template {
 .main-page p {
   margin: 0;
 }
+.main-page__publish {
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+}
 .posts__title p {
   font-size: 14px;
   font-weight: lighter;
@@ -1281,6 +1286,7 @@ template {
 .posts__panorama-photo {
   width: 100%;
   height: 100%;
+  margin: 0 0 20px 0;
 }
 .posts__panorama-day {
   display: none;
@@ -1296,6 +1302,171 @@ template {
   font-size: 12px;
   line-height: 24px;
   font-weight: bold;
+}
+.posts__post-info .description {
+  margin-bottom: 25px;
+}
+.posts__post-info__bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  text-transform: uppercase;
+  text-align: center;
+  color: #d22856;
+}
+.posts__post-info__bottom span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  text-align: center;
+  color: #d22856;
+  margin-bottom: 40px;
+}
+.posts__post-info__bottom span p {
+  font-size: 12px;
+  line-height: 24px;
+}
+.posts__post-info__bottom span img {
+  margin: 0 20px 0 0;
+}
+.posts__post-info p {
+  font-size: 14px;
+  line-height: 24px;
+}
+.posts__post-tablet strong {
+  font-size: 14px;
+  line-height: 24px;
+}
+.posts__post-tablet .time {
+  font-size: 12px;
+  font-weight: lighter;
+  opacity: 0.8;
+}
+.posts__post-tablet .like-tablet-panorama {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #d22856;
+  margin-bottom: 40px;
+}
+.posts__post-tablet .like-tablet-panorama img {
+  margin: 0 20px 0 0;
+}
+.posts__post-tablet p {
+  margin-bottom: 25px;
+}
+.posts__post-flex strong {
+  font-size: 14px;
+  line-height: 24px;
+}
+.posts__post-flex .time {
+  font-size: 12px;
+  font-weight: lighter;
+  opacity: 0.8;
+}
+.posts__info p {
+  font-size: 14px;
+  line-height: 24px;
+}
+@media (max-width: 767px) {
+  .posts__post-photo .post-photo-tablet {
+    display: none;
+  }
+  .posts__post-photo .post-photo-desktop {
+    display: none;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .posts__post-photo .post-photo-mobile {
+    display: none;
+  }
+  .posts__post-photo .post-photo-desktop {
+    display: none;
+  }
+}
+@media (min-width: 1200px) {
+  .posts__post-photo .post-photo-mobile {
+    display: none;
+  }
+  .posts__post-photo .post-photo-tablet {
+    display: none;
+  }
+}
+.designer__tools {
+  width: 200px;
+  margin: 0 auto;
+}
+.designer__tools-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.designer__tools-buttons-btn {
+  border: 0 solid #fff;
+  cursor: pointer;
+  background-color: #fff;
+}
+@media (max-width: 767px) {
+  .designer__photo {
+    margin: 0 0 45px 0;
+  }
+  .designer__photo-tablet {
+    display: none;
+  }
+  .designer__photo-desktop {
+    display: none;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .designer__photo-mobile {
+    display: none;
+  }
+  .designer__photo-desktop {
+    display: none;
+  }
+}
+@media (min-width: 1200px) {
+  .designer__photo-mobile {
+    display: none;
+  }
+  .designer__photo-tablet {
+    display: none;
+  }
 }
 body {
   position: relative;
