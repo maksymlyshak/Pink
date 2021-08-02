@@ -1,11 +1,29 @@
 .main-page {
     background-color: #fff;
-    p {
-        margin: 0;
-    }
     &__publish {
         font-size: 14px;
         line-height: 30px;
         text-align: center;
+        margin: 0 0 70px 0;
+    }
+}
+
+@media @tablet {
+    .main-page {
+        &__publish {
+            font-size: 18px;
+            line-height: 30px;
+            text-align: center;
+            margin: 0 0 135px 0;
+        }
+    }
+}
+
+@media @desktop {
+    .main-page {
+        &__publish {
+            font-size: 18px;
+            line-height: 30px;
+        }
     }
 }

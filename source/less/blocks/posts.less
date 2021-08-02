@@ -1,11 +1,10 @@
 .posts {
-    &__title {
-        p {
+    &__title-text {
             font-size: 14px;
             font-weight: lighter;
             line-height: 30px;
             padding: 50px 45px 50px 45px;
-        }
+            margin: 0;
     }
     &__panorama-photo {
         width: 100%;
@@ -108,7 +107,7 @@
 
 @media @mobile {
  .posts {
-     &__post-photo {
+    &__post-photo {
         .post-photo-tablet {
             display: none;
             }
@@ -120,10 +119,58 @@
 }
 @media @tablet {
  .posts {
-     &__post-photo {
-        .post-photo-mobile {
-             display: none;
+    &__post-wrapper-flex {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        }
+        &__post-info {
+            .description-two {
+                margin: 0 0 23px 0;
             }
+            .description-four {
+                margin: 0 0 23px 0;
+            }
+            .description {
+                margin: 0;
+                white-space: pre-wrap;
+            }
+            &__bottom {
+                span {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    width: 100%;
+                    margin: 0;
+                    img {
+                        margin: 0;
+                    }
+                }
+            }
+        }      
+     &__post-flex {
+         display: flex;
+         flex-wrap: wrap;
+         align-content: space-between;
+         width: 300px;
+         height: 425px;
+     }
+    &__panorama-photo {
+        height: 510px;
+        }
+    &__title {
+        p {
+            font-size: 18px;
+            line-height: 30px;
+            padding: 140px 100px 140px 100px;
+            text-align: center;
+        }
+    }
+    &__post-photo {
+        .post-photo-mobile {
+            display: none;
+        }
         .post-photo-desktop {
             display: none;
             }
@@ -133,12 +180,35 @@
 
 @media @desktop {
  .posts {
-     &__post-photo {
-         .post-photo-mobile {
-             display: none;
+     &__post-wrapper-flex {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    &__post {
+        width: 300px;
+        height: 100%;
+    }
+    &__post-flex {
+        .description-two {
+            margin: 0 0 65px 0;
+        }
+        .description-four {
+            margin: 0 0 35px 0;
+        }
+    }
+    &__title-text {
+        font-size: 18px;
+        line-height: 30px;
+        text-align: center;
+        white-space: pre-wrap;
+    }
+    &__post-photo {
+        .post-photo-mobile {
+            display: none;
             }
-            .post-photo-tablet {
-                display: none;
+        .post-photo-tablet {
+            display: none;
             }
         }
     }    

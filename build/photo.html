@@ -46,7 +46,7 @@
     </section>
     <main class="main-page">
             <div class="posts__title">
-                <p>
+                <p class="posts__title-text">
                     Взгляните на фотографии, которые выкладывают пользователи!
                     Видите, как не хватает ваших?
                 </p>
@@ -69,7 +69,8 @@
                             <p>Нравиться:215</p>
                         </span>
                     </div>
-                    <div class="posts__post-flex">
+                    <div class="posts__post-wrapper-flex">
+                        <div class="posts__post-flex">
                         <div class="posts__post">
                             <div class="posts__post-photo">
                                 <img class="post-photo-mobile" src="img/photo-1-mobile.jpg.png" alt="1">
@@ -85,8 +86,8 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="posts__post-flex">
+                        </div>
+                        <div class="posts__post-flex">
                         <div class="posts__post">
                             <div class="posts__post-photo">
                                 <img class="post-photo-mobile" src="img/photo-2-mobile.jpg.png" alt="2">
@@ -96,14 +97,14 @@
                             <div class="posts__post-info"> 
                                 <strong>Антон</strong>
                                 <span class="time">(12 часов назад)</span>
-                                <p class="description">Соседи будут рады!</p>
+                                <p class="description-two">Соседи будут рады!</p>
                                 <div class="posts__post-info__bottom">
                                     <span><p>Нравиться: 666</p><img src="img/icon-heart.svg.png" alt=""></span>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="posts__post-flex">
+                        </div>
+                        <div class="posts__post-flex">
                         <div class="posts__post">
                             <div class="posts__post-photo">
                                 <img class="post-photo-mobile" src="img/photo-3-mobile.jpg.png" alt="3">
@@ -119,8 +120,8 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="posts__post-flex">
+                        </div>
+                        <div class="posts__post-flex"> 
                         <div class="posts__post">
                             <div class="posts__post-photo">
                                 <img class="post-photo-mobile" src="img/photo-4-mobile.jpg.png" alt="4">
@@ -130,14 +131,14 @@
                             <div class="posts__post-info"> 
                                 <strong>Сергей</strong>
                                 <span class="time">(25 часов назад)</span>
-                                <p class="description">Самая кубанская в мире!</p>
+                                <p class="description-four">Самая кубанская в мире!</p>
                                 <div class="posts__post-info__bottom">
                                     <span><p>Нравиться: 4</p><img src="img/icon-heart.svg.png" alt=""></span>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="posts__post-flex"> 
+                        </div>
+                        <div class="posts__post-flex"> 
                         <div class="posts__post">
                             <div class="posts__post-photo">
                                 <img class="post-photo-mobile" src="img/photo-5-mobile.jpg.png" alt="5">
@@ -153,8 +154,8 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="posts__post-flex">
+                        </div>
+                        <div class="posts__post-flex">
                         <div class="posts__post">
                             <div class="posts__post-photo">
                                 <img class="post-photo-mobile" src="img/photo-6-mobile.jpg.png" alt="6">
@@ -170,6 +171,7 @@
                                 </div>
                             </div>
                         </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -182,117 +184,123 @@
         </div>
         <section class="designer">
             <div class="container">
-                <div class="designer__photo">
+                <div class="designer__wrapper">
+                    <div class="designer__photo">
                     <img class="designer__photo-mobile" src="img/photo-7-mobile.jpg.png" alt="1">
                     <img class="designer__photo-tablet" src="img/photo-7-tablet.jpg.png" alt="1">
                     <img class="designer__photo-desktop" src="img/photo-7-desktop.jpg.png" alt="1">
-                </div>
-                <div class="designer__tools">
-                    <div class="designer__tools-buttons">
-                        <button class="designer__tools-buttons-btn">
-                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="44" height="44" viewBox="0 0 44 44">
+                    </div>
+                    <div class="designer__wrapper-tools">
+                        <div class="designer__tools">
+                            <div class="designer__tools-buttons">
+                                <button class="designer__tools-buttons-btn">
+                            <svg class="btn-mobile" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="44" height="44" viewBox="0 0 44 44">
                             <image id="crop.svg" width="44" height="44" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAYAAAAehFoBAAAAyUlEQVRYhe2XwQ2DMAxFP4hB6K3jwKV7MAmjtLN0gXYTUCXUQywlpuUXo/4n+eIAebIcK1T38wUFpmS5yj/Opd5z80+QMBsJs5Ewm3qZs7kokXvXGw8AXWGfUBVuAVw90tFaYjSZhGjCrckkNI67QamPv71beM7JG401NhJmI2E2EmYjYTYSZiNhNocTbkzm96y6T6sl2PxFD6/6B9saT4WfJhNceDCZHfEI3wD0USrtPXQv6dMyM7eOlOz3NdbYSJiNhNkcSxjADD5tJbLSN8+fAAAAAElFTkSuQmCC"></image>
                             </svg>
-                        </button>
-                        <button class="designer__tools-buttons-btn">
-                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="48" height="43" viewBox="0 0 48 43">
+                            <svg class="btn-tablet" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22" height="22" viewBox="0 0 22 22">
+                                <image id="crop.svg_50_" data-name="crop.svg 50%" width="22" height="22" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAAAbklEQVQ4jWO8pBHGgAb+Q2lGdAlSABMlmvGBoWnwfzSMDtDlseEGbAZTA9Sjm8GCJfbRXU0odWDz5WiqGDUYC6CZwSwYIqQDrOl8QFyMNUcRC7C5uBFDhEoGN0DDjVgMAyjqsRlMFTDEDGZgYAAAjmkUhF86XNkAAAAASUVORK5CYII="></image>
+                              </svg>
+                              <svg class="btn-desktop" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="44" height="44" viewBox="0 0 44 44">
+                                <image id="crop.svg" width="44" height="44" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAYAAAAehFoBAAAAyUlEQVRYhe2XwQ2DMAxFP4hB6K3jwKV7MAmjtLN0gXYTUCXUQywlpuUXo/4n+eIAebIcK1T38wUFpmS5yj/Opd5z80+QMBsJs5Ewm3qZs7kokXvXGw8AXWGfUBVuAVw90tFaYjSZhGjCrckkNI67QamPv71beM7JG401NhJmI2E2EmYjYTYSZiNhNocTbkzm96y6T6sl2PxFD6/6B9saT4WfJhNceDCZHfEI3wD0USrtPXQv6dMyM7eOlOz3NdbYSJiNhNkcSxjADD5tJbLSN8+fAAAAAElFTkSuQmCC"></image>
+                              </svg>
+                                                            
+                                </button>                        
+                                <button class="designer__tools-buttons-btn">
+                            <svg class="designer__tools-buttons-btn--mobile btn-mobile" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="48" height="43" viewBox="0 0 48 43">
                                 <image id="fill.svg" width="48" height="43" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAArCAYAAAA+EwvfAAABs0lEQVRoge2Z323CMBCHr1UHyAh97CMjlBF46XNW6ATpBh0BMQFsUDYo6gSMwAatIs5txNnn853/pFI+CQnOEfy+xHbscPf19AJKtgCwAoA1AFy0X2Ll3hC+R4EPAOjIETMWeMfwjqYSGoGdp8s0k9AInAL9vomEdgzMRkIrAHORsAgASmxItaKEVaDDWclHFQmLQIcBV6Tlj+ISWoFQ+EvtMaER4MKvaw/sVIFY+FPt2SlFQBLeUU1CKpAS3lFFQiKgCe8oLhETsIR3FJXgBHKEdxST4AT2mcI7OIk9OVoIJ/CcMXxM4va3xDwkHDte5k9SbQx3BY6kUg71b3ECG2N3kRJakovgBHL0+RihMbHFVxROoLREKPwbPvXo8T2L5E5cQiIUfpyNhsnnITZDSddCOSVC4SHQbXy1X1JWoyXvA4Bd5pFUr7WeVJHU/UCJO7FjIBVBm2ZHlnMtNMV39h3BNu2eOMdqNAuWpxKW/YCPs6fmCLZZnwtxEqln/pVUBG1WAZhITNczR0W3OeCSYnq2z1g7kKMRyz80syDHFWjKItCaRaA14574+z8LLF2oKQDwAxqTkKPc18WIAAAAAElFTkSuQmCC"></image>
-                            </svg>                          
-                        </button>
-                        <button class="designer__tools-buttons-btn">
-                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
+                            </svg>
+                            <svg class="btn-tablet" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="22" viewBox="0 0 24 22">
+                                <image id="fill.svg_50_" data-name="fill.svg 50%" width="24" height="22" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAWCAYAAADafVyIAAABAklEQVRIibWUzQ3CMAxGH4gBOgJHjmUENoAL53YEJkBMwAiwCSsgJmAD2AAU4SCTH5eU8kmVkjT5Xm3XGV1mazKqgROwAY7pLd0aGzv2QAUcgCZ6OwBgBZxl3BtiAe7AArj+ArEATktgqubFEAvQiCGSql7pygFC84U8xZAUIGV+VzUpgoSAnLlXMSRstIdhrlVJE9beJ9ohmkQrL7mDt2i1h8IUtT08/JlaRZSNwN85h3BjRq2cmUrKnOaqOaMIPOSbSFr1QVupSyXjt6zbtDEi0eZVol7voqci6IqkLbm+LUAKkjJ3v/JOzfXYTNEg6orgZ/0d4PrAXw9/A3wUZVABT7CIO3NHDDEkAAAAAElFTkSuQmCC"></image>
+                              </svg>
+                              <svg class="btn-desktop" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="48" height="43" viewBox="0 0 48 43">
+                                <image id="fill.svg" width="48" height="43" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAArCAYAAAA+EwvfAAABs0lEQVRoge2Z323CMBCHr1UHyAh97CMjlBF46XNW6ATpBh0BMQFsUDYo6gSMwAatIs5txNnn853/pFI+CQnOEfy+xHbscPf19AJKtgCwAoA1AFy0X2Ll3hC+R4EPAOjIETMWeMfwjqYSGoGdp8s0k9AInAL9vomEdgzMRkIrAHORsAgASmxItaKEVaDDWclHFQmLQIcBV6Tlj+ISWoFQ+EvtMaER4MKvaw/sVIFY+FPt2SlFQBLeUU1CKpAS3lFFQiKgCe8oLhETsIR3FJXgBHKEdxST4AT2mcI7OIk9OVoIJ/CcMXxM4va3xDwkHDte5k9SbQx3BY6kUg71b3ECG2N3kRJakovgBHL0+RihMbHFVxROoLREKPwbPvXo8T2L5E5cQiIUfpyNhsnnITZDSddCOSVC4SHQbXy1X1JWoyXvA4Bd5pFUr7WeVJHU/UCJO7FjIBVBm2ZHlnMtNMV39h3BNu2eOMdqNAuWpxKW/YCPs6fmCLZZnwtxEqln/pVUBG1WAZhITNczR0W3OeCSYnq2z1g7kKMRyz80syDHFWjKItCaRaA14574+z8LLF2oKQDwAxqTkKPc18WIAAAAAElFTkSuQmCC"></image>
+                              </svg>                                                     
+                                </button>   
+                                <button class="designer__tools-buttons-btn">
+                            <svg class="designer__tools-buttons-btn--mobile btn-mobile" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
                                 <image id="contrast.svg" width="32" height="32" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACKklEQVRYhcVX2VHDMBRcNBTgEvzJH6aCmA7MD9+hgkAFcToIFYQOcAdxKuBoAEpICYySp0Q8reQjHDuTyYyOfat3SM9n7xe36IkCQAVgAqCMbGkBbAA0AF6DWYI+AqYAZiJgCKyARwBPqT0mGDkiB7AGsBphHLJnJRx5MNshwLr6JeHqISiFq2J7zoORvctXwegRjcRZx7iQ/GCGMgDPAO50SHQOVLKQYQFgCWBL5rSxewDzYGaPGznEDn4I8sjJ7UmvANQ9jEPW1LKHVcLKzwmjJjJi/DpC5LCWX62SLbY38w/qBExJwjmCrlOX8rMu/1AH2UZElGLzIGAW0O4Tpo/LNaaS9a50t8KlMXMCClLnC6J6CHLliVfh9LGzayJlswxGhqNQlcA4KyO166MZ6XqGe5UPjVozMST5NoToFFQJ7pJdxafEnuEyxc0E/DSSD9lfCEjm018IeAtGOgQkXTYCftwDbiNtlA9dlqfgU5We5m4NKY2KPEpj8eDty8iltzHkcoBcIKfiSXEzzsZIjHR9zlm8BmCpHiB9LcPZdUn4SLhZf9CFVp5f7XrW6Oxs+i3ZmlzLfXqCWpKtlX8fmfBqbzqh3wTk8o6zruiOhKkLRaSl30q7thPr3wOfkcahEGE1EceQydoXYhxi4+Ap9mX0G225bzzZljtUI5MwBteWBSXPrmLIwityS45BK1yB8ZQACxsnm6ljEtDC7rEfIZZDV8cB//t5DuALTQuJyPrXRg0AAAAASUVORK5CYII="></image>
-                            </svg>                          
-                        </button>
-                    </div>
-                    <div class="designer__tools-scale">                       
-                    </div>
-                </div>
-            </div></section>
-            <footer class="main-footer">
-                <div class="container">
-                            <div class="main-footer__bottom-social">
-                                <ul class="main-footer__bottom-social__lists">
-                                    <li class="main-footer__bottom-social__list">
-                                        <a class="social__list-link" href="#">
-                                            <span class="link__img">
-                                                <svg class="link__img-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="14" viewBox="0 0 18 14">
-                                                    <image id="twitter.svg" width="18" height="14" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAOCAYAAAAi2ky3AAAA6ElEQVQokZ2T0RHBQBRFjx0FpIR8+qMEHeDHNxWIClABqYAOUAElGA1IB5Rgrrw1GxHEncnP27dn7919aZxbw4hcNz5rDkwA338EBkBXNQckwAHofMCsgVkAwQBXYAu0nRU7BktKiHxtVKoW1XdBJJ22BC62MbZ6v7StqJMiNi1rqNiiYId8u7u9YM6yVzVHgbMqPYw4I0YVTb/o5kEb+/5RZneEf7XUinW18/0elP0ZL30FKee4pqtF2O9BkmxOf4TpTvXLPKU50ohrer89s3cuJ6vXBYEUSdPb8z/gG4BmRWMiJ+WZA+6UoS2Q+KtBqwAAAABJRU5ErkJggg=="></image>
-                                                </svg>
-                                                
-                                            </span>
-                                        </a></li>
-                                    <li class="main-footer__bottom-social__list">
-                                        <a class="social__list-link" href="#">
-                                            <span class="link__img">
-                                                <svg class="link__img-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="9" height="18" viewBox="0 0 9 18">
-                                                    <image id="facebook.svg" width="9" height="18" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAASCAYAAACJgPRIAAAAd0lEQVQokdWOwRFAMBBFn4wCUoKjoxJoQhuoABUpQUrIqMggMSvJwcHFP/3Z97KbbCtbRHqgAwo5zEWfgJFElBh1MX5uqgAdsBkwUgoFnHBLtdsURjt2SmuEryy+qAgl8ko6zjWuh2cHwHrJRE+vWM+++9M/JWAHqWMNv+ko7cYAAAAASUVORK5CYII="></image>
-                                                </svg>
-                                            </span>
-                                        </a></li>
-                                    <li class="main-footer__bottom-social__list">
-                                        <a class="social__list-link" href="#">
-                                            <span class="link__img">
-                                                <svg class="link__img-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="15" height="13" viewBox="0 0 15 13">
-                                                    <image id="youtube.svg" width="15" height="13" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAANCAYAAAB2HjRBAAAAnUlEQVQokZ2SwQ3CMBAEB5QCKIH8KCN0AB/e6SShA6ggdAAdmBrSAOkglIBWOiOLoHBmPvZn9rzWLfrNYQRWwB042uliaaKogAA8gNorf7IGOkAvapNwlxyR1FhIZ6FuOaW2OsHqZcmR9F92uXJEFa7/ygOwz5W1A1ugBG6FU7rYAmnimzn5CZyBk90nfJOVrimaNos6x9S0z08R4AWPfx0s4sYgwwAAAABJRU5ErkJggg=="></image>
-                                                </svg>
-                                                
-                                            </span>
-                                        </a></li>    
-                                </ul>
+                            </svg>
+                            <svg class="btn-tablet" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16">
+                                <image id="contrast.svg_50_" data-name="contrast.svg 50%" width="16" height="16" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA/klEQVQ4jZWTwREBURBEn18CIANHRzIgBBdXKwQRSEEGiIAMbAaUCIQgBNVbM2rMrir6tDW/e2Z+/97efbwkoQJWwCzVa+AIHGKxhO8RcAX2HWKstjfOyIv9JB6kaY9w7ltNjDvVuW9wCuI1MLdVaxPdrLY2zsA0zRUq6+rijzsCW5t4Ac6hiTRVsdV87SzOHpzCZsKqBMOOLUkb7oFzZ/EVHi16NyaRWzopfyDn4BfUkVuiIT+Id7b+2/gSDbEn/QaJN8Z5G68GehYFRVBUcxMFaBjE4gjSHPxn+ifKwtOjHP9GkRQUT+U3aPLCm+ccqKui6sZGqKazZnJzALwAfLM+8fPxJ44AAAAASUVORK5CYII="></image>
+                              </svg>
+                              <svg class="btn-desktop" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
+                                <image id="contrast.svg" width="32" height="32" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACKklEQVRYhcVX2VHDMBRcNBTgEvzJH6aCmA7MD9+hgkAFcToIFYQOcAdxKuBoAEpICYySp0Q8reQjHDuTyYyOfat3SM9n7xe36IkCQAVgAqCMbGkBbAA0AF6DWYI+AqYAZiJgCKyARwBPqT0mGDkiB7AGsBphHLJnJRx5MNshwLr6JeHqISiFq2J7zoORvctXwegRjcRZx7iQ/GCGMgDPAO50SHQOVLKQYQFgCWBL5rSxewDzYGaPGznEDn4I8sjJ7UmvANQ9jEPW1LKHVcLKzwmjJjJi/DpC5LCWX62SLbY38w/qBExJwjmCrlOX8rMu/1AH2UZElGLzIGAW0O4Tpo/LNaaS9a50t8KlMXMCClLnC6J6CHLliVfh9LGzayJlswxGhqNQlcA4KyO166MZ6XqGe5UPjVozMST5NoToFFQJ7pJdxafEnuEyxc0E/DSSD9lfCEjm018IeAtGOgQkXTYCftwDbiNtlA9dlqfgU5We5m4NKY2KPEpj8eDty8iltzHkcoBcIKfiSXEzzsZIjHR9zlm8BmCpHiB9LcPZdUn4SLhZf9CFVp5f7XrW6Oxs+i3ZmlzLfXqCWpKtlX8fmfBqbzqh3wTk8o6zruiOhKkLRaSl30q7thPr3wOfkcahEGE1EceQydoXYhxi4+Ap9mX0G225bzzZljtUI5MwBteWBSXPrmLIwityS45BK1yB8ZQACxsnm6ljEtDC7rEfIZZDV8cB//t5DuALTQuJyPrXRg0AAAAASUVORK5CYII="></image>
+                              </svg>                                                    
+                                </button>                         
                             </div>
-                            <div class="main-footer__bottom-developed">
-                                <p>Разработано</p>
-                                <a href="#">
-                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="27" height="34" viewBox="0 0 27 34">
+                            <div class="designer__tools-scales">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="202" height="14" viewBox="0 0 202 14">
+                                    <image id="slider" width="202" height="14" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMoAAAAOCAYAAABuHIMKAAAB+klEQVRoge3av2sUQRTA8W/0ciGndygWIU3AKOhINmAU01joBVMZi4COgljZiWLpf6BtUKysVDQbJZCQKsSf2ARET7eYQATRRhBCgqtHuCArc1xiMTlPcYpdeJ9m5+7NvmJ4j9lhty1JEoTwKVK6G7gKjAC9gC2yj8A0MBaY8EvWFlwaRXgVKa2BO8D2Jnm/AxcDE4ZOJMWkUYQ3jSZ5aOtq29BhSudOkN/fA0lCbeEz38bn+PHkNY0d5mxgwomsrL40ivAiUroLWASKxdFj7Lp2ftO0SzfuE08+t8MY2BuY8KszKYW2SJkITy7bJimUDzVtEsvGCscH7LAIXHEmpJQ0ivDFHtwpnSm3TFfSQ+vDESeYUjk1OFwD2qVcxP94wE5yQEffnpZZOvp669c16FeDw1l49l+THUV48bva/6LuN87F2Tkf58z8bN75V4h/FCn9Bji4Wlmk88iBP968+u5D/dpO21szPzvgTEgh2VGEL1M2T/zoact08cTGnCknmFLSKMKXW8BK9UWFpet3m6a0serLih0uAzedCSkl71GEN5HSp4BJYGvhaD/F02Xy+3rq6WsLn4gfP6P66r39+RMYDUw4nZXVl0YRXkVKnwTuATua5LU7yYXAhDNOJMWkUYR3kdK2SS413pPsbuRf/yjydmDClUytOvAL/xCNmZWKqgoAAAAASUVORK5CYII="></image>
                                 </svg>
-                                </a>                           
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="202" height="14" viewBox="0 0 202 14">
+                                    <image id="slider_copy" data-name="slider copy" width="202" height="14" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMoAAAAOCAYAAABuHIMKAAAB80lEQVRoge3az0uUQRzH8be1rrS1S+IhulRYB5/wETLRS4dcyVM/QKinwG7dIunYf1DXKG+dKrLHQFA6iUpFFyFqaw8jGERdgkAwtxZZiUdmXSP3q9DFmT18X4flmecz8zxz+TLMPtOUJAkuFYPoMHAbuAC0A3YCX4Ap4H5o4u9OJ6TUf3BaKMUgioBHwAERbvgF3AhNHItEKY+cFUqtSMbsO/cP9JC7do50xxFIEioL31h5PsPv2XfUVpiroYnHxUOU8sRJoRSD6BCwCGSzQ2dpuzMs+lhL955SmnhlL0vAidDEP0QnpTzY4+iVt2yRZPKndywSy2aZ/m57mQVGRAelPHFVKHbjTu5KXgT1ctHAljFKNYJU0DdYAZp3cy7PaCUFtHQeF1m9ls726p016Ar6Bt3+JafU9tacrCjJNlc7+rtn0hpRjSNl5qfTuz2bYhC9B06tFhbZ13tS5P9a/fi52mqm6YOZn+4WHZTywNUeZdL+lF7MiaBeaXxuyxilGoGrQnkI/Cy/LrB097EIN9ms/KZgW8vAA9FBKU9cfnC8CEwAezNnushezpPuOFrNKgtfq6tN+e0n2/wDDIUmnhIPUcoT10dYzgNPgIMi3GBXkuuhiV+KRCmPfByKtEVyE7gEHKvd3jwUORqaeFkMUsonYB2oLY2bdL3F/wAAAABJRU5ErkJggg=="></image>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="202" height="14" viewBox="0 0 202 14">
+                                    <image id="slider_copy_2" data-name="slider copy 2" width="202" height="14" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMoAAAAOCAYAAABuHIMKAAAB/ElEQVRoge3az0tUURTA8a85jjg1Q+Ii3PR74Q2f4g9006JGcpUFQr6C2rWLoGX/QW1F3bVKMZ+CkLWSioo2QsXgW1zBIGoTBNLQ1CAj8eIOYy1e47jozX0w57N5dzhnmMO573CHN9MUBAEiHnzldgJ3gDHgJGA25yOwAkw62vsiW2WHDEpM+Mp1gQfAoSoV/QBuOtrzQhERORmUGKgMySOzHwdHBslcu0Cy6ygEAaWNz3xfeMbP52+pnDBXHe0tNnrP6k0GxTJfuUeATSCdHj9Hx93r/yxo6/4cheWXZlkATjva+xpKEpE5IK217rYZklR2oOqQGCaWOt9vlunKe0QdyaDYd8lUkJnI1iwkMzGyuxwLBUWkEmp4tAS0SJvtmKedBNDafarm57d2nyhfdwh61fCofGeunx05USz7e7fv474P9p0p/rOEXltNSlPt8ZX7Hujbzm3SNnRmzzq21z+Ur0ma3um11cFQgoiMnCj2PTYVFJZe1CyksPgn50koKCIlg2LfNJAvvsqxde9h1WJMrPg6Z5bfgKlQgoiU/I4SA75yzZOvZaA5dbaH9JUsya5j5cJKG5/Kp03xzbp5+QsYd7S30tgdqz8ZlJjwlXsRmAUOV6koD9xwtPc0FBGRk0GJEV+5ZkhuAZeB45XKdv8UOeNoL9/oPbIC+A2RLY2curW6wQAAAABJRU5ErkJggg=="></image>
+                                </svg>                              
                             </div>
                         </div>
-                    
-                
-                <div class="main-footer__bottom-social">
-                        <ul class="main-footer__bottom-social__lists">
-                            <li class="main-footer__bottom-social__list">
-                                <a class="social__list-link" href="#">
-                                    <span class="link__img">
-                                        <svg class="link__img-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="14" viewBox="0 0 18 14">
-                                            <image id="twitter.svg" width="18" height="14" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAOCAYAAAAi2ky3AAAA6ElEQVQokZ2T0RHBQBRFjx0FpIR8+qMEHeDHNxWIClABqYAOUAElGA1IB5Rgrrw1GxHEncnP27dn7919aZxbw4hcNz5rDkwA338EBkBXNQckwAHofMCsgVkAwQBXYAu0nRU7BktKiHxtVKoW1XdBJJ22BC62MbZ6v7StqJMiNi1rqNiiYId8u7u9YM6yVzVHgbMqPYw4I0YVTb/o5kEb+/5RZneEf7XUinW18/0elP0ZL30FKee4pqtF2O9BkmxOf4TpTvXLPKU50ohrer89s3cuJ6vXBYEUSdPb8z/gG4BmRWMiJ+WZA+6UoS2Q+KtBqwAAAABJRU5ErkJggg=="></image>
-                                          </svg>
-                                          
-                                    </span>
-                                </a></li>
-                            <li class="main-footer__bottom-social__list">
-                                <a class="social__list-link" href="#">
-                                    <span class="link__img">
-                                        <svg class="link__img-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="9" height="18" viewBox="0 0 9 18">
-                                            <image id="facebook.svg" width="9" height="18" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAASCAYAAACJgPRIAAAAd0lEQVQokdWOwRFAMBBFn4wCUoKjoxJoQhuoABUpQUrIqMggMSvJwcHFP/3Z97KbbCtbRHqgAwo5zEWfgJFElBh1MX5uqgAdsBkwUgoFnHBLtdsURjt2SmuEryy+qAgl8ko6zjWuh2cHwHrJRE+vWM+++9M/JWAHqWMNv+ko7cYAAAAASUVORK5CYII="></image>
-                                          </svg>
-                                    </span>
-                                </a></li>
-                            <li class="main-footer__bottom-social__list">
-                                <a class="social__list-link" href="#">
-                                    <span class="link__img">
-                                        <svg class="link__img-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="15" height="13" viewBox="0 0 15 13">
-                                            <image id="youtube.svg" width="15" height="13" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAANCAYAAAB2HjRBAAAAnUlEQVQokZ2SwQ3CMBAEB5QCKIH8KCN0AB/e6SShA6ggdAAdmBrSAOkglIBWOiOLoHBmPvZn9rzWLfrNYQRWwB042uliaaKogAA8gNorf7IGOkAvapNwlxyR1FhIZ6FuOaW2OsHqZcmR9F92uXJEFa7/ygOwz5W1A1ugBG6FU7rYAmnimzn5CZyBk90nfJOVrimaNos6x9S0z08R4AWPfx0s4sYgwwAAAABJRU5ErkJggg=="></image>
-                                          </svg>
-                                          
-                                    </span>
+                        <div class="designer__scale">
+                    <div class="designer__scale-tool">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="240" height="14" viewBox="0 0 240 14">
+                            <image id="slider" width="240" height="14" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPAAAAAOCAYAAAARzZH7AAACCklEQVRoge3bz0sUYRzH8bdNaq2uBBWVh4U00AGng0WnDmV4qw5CTEF06hBE0UXoPyioSyjRoVMFNRaC0kn6TRchYmugxzAIuySVJI4tg7BOPNvY5WndY7P7fF+XneX7XD4Pz4cHZtmmJEkQwhah6+8CLgHHgC5AF+AzMAnc8FTwtZ62QgosrBG6vg/cBtqrZF4GznoqCIxJRkmBhRXS8t7XZ77tyH46Tg3S0luAJGFl5gtLD57w6+kb0hv5pKeCsXrYFymwaHih6+8AZoF8fugQWy+f/mfkhav3iMZf6McI2OOp4JuxKGM2yPEVFrigy5sb2Fe1vJqe5Q7368c8cNFYkEFNvQcGvwPb5BSLRnV9uYPCqsPOW8Ns6u9ZN2X89iPz564x55QZblsy5hnzQ25g0fA6V51KxNa+7ppRW/u6Kp+dZceYZdFGNT21XY6waGSh68e6m3/eT9WQvhNqhlhNT21ef/H/JzewsMEHnTEuztaMGr/7tPaojGEGSYGFDSZ0xujhs5pRo7G/ayaMYQZJgYUNRoHF0ssiC1fuVI2rZ6VXRf34ExgxFmSQ/A4srBC6/nFgHHByB/eSPzFAS0+hEn1lZo7o0XNKr9/rr2VgyFPBZD3sixRYWCN0/aPAXWBLlcz65j3jqeCxMckoKbCwSuj6urzn0z8z7E6zr/2Z4aangsW62Q/gN0aGlZyErRHSAAAAAElFTkSuQmCC"></image>
+                          </svg>                             
+                    </div>
+                        </div>
+                        <div class="designer__buttons">
+                    <button class="designer__buttons-btn--post" type="button">Запостить</button>
+                    <button class="designer__buttons-btn--cancel" type="button">Отмена</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+            <footer class="main-footer second-footer"> 
+                <div class="container">
+                    <div class="main-footer__bottom-block second-footer__bottom-block">
+                        <div class="main-footer__bottom-logo second-footer__bottom-logo">
+                            <img class="main-footer__bottom-logo__tablet second-footer__bottom-logo__tablet" src="img/logotype-blue-tablet.svg.png" alt="logo">
+                            <img class="main-footer__bottom-logo__desktop second-footer__bottom-logo__desktop" src="img/logotype-blue-desktop.svg.png" alt="logo">
+                        </div>
+                        <div class="main-footer__bottom-social second-footer__bottom-social">
+                            <ul class="main-footer__bottom-social__lists second-footer__bottom-social__lists">
+                                <li class="main-footer__bottom-social__list second-footer__bottom-social__list">
+                                    <a class="social__list-link" href="#">
+                                        <span class="link__img">
+                                            <svg class="link__img-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="14" viewBox="0 0 18 14">
+                                                <image id="twitter.svg" width="18" height="14" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAOCAYAAAAi2ky3AAAA6ElEQVQokZ2T0RHBQBRFjx0FpIR8+qMEHeDHNxWIClABqYAOUAElGA1IB5Rgrrw1GxHEncnP27dn7919aZxbw4hcNz5rDkwA338EBkBXNQckwAHofMCsgVkAwQBXYAu0nRU7BktKiHxtVKoW1XdBJJ22BC62MbZ6v7StqJMiNi1rqNiiYId8u7u9YM6yVzVHgbMqPYw4I0YVTb/o5kEb+/5RZneEf7XUinW18/0elP0ZL30FKee4pqtF2O9BkmxOf4TpTvXLPKU50ohrer89s3cuJ6vXBYEUSdPb8z/gG4BmRWMiJ+WZA+6UoS2Q+KtBqwAAAABJRU5ErkJggg=="></image>
+                                              </svg>                                              
+                                        </span>
+                                    </a></li>
+                                <li class="main-footer__bottom-social__list second-footer__bottom-social__list">
+                                    <a class="social__list-link" href="#">
+                                        <span class="link__img">
+                                            <svg class="link__img-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="9" height="18" viewBox="0 0 9 18">
+                                                <image id="facebook.svg" width="9" height="18" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAASCAYAAACJgPRIAAAAd0lEQVQokdWOwRFAMBBFn4wCUoKjoxJoQhuoABUpQUrIqMggMSvJwcHFP/3Z97KbbCtbRHqgAwo5zEWfgJFElBh1MX5uqgAdsBkwUgoFnHBLtdsURjt2SmuEryy+qAgl8ko6zjWuh2cHwHrJRE+vWM+++9M/JWAHqWMNv+ko7cYAAAAASUVORK5CYII="></image>
+                                              </svg>
+                                        </span>
+                                    </a></li>
+                                <li class="main-footer__bottom-social__list second-footer__bottom-social__list">
+                                    <a class="social__list-link" href="#">
+                                        <span class="link__img">
+                                            <svg class="link__img-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="15" height="13" viewBox="0 0 15 13">
+                                                <image id="youtube.svg" width="15" height="13" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAANCAYAAAB2HjRBAAAAnUlEQVQokZ2SwQ3CMBAEB5QCKIH8KCN0AB/e6SShA6ggdAAdmBrSAOkglIBWOiOLoHBmPvZn9rzWLfrNYQRWwB042uliaaKogAA8gNorf7IGOkAvapNwlxyR1FhIZ6FuOaW2OsHqZcmR9F92uXJEFa7/ygOwz5W1A1ugBG6FU7rYAmnimzn5CZyBk90nfJOVrimaNos6x9S0z08R4AWPfx0s4sYgwwAAAABJRU5ErkJggg=="></image>
+                                            </svg>                                              
+                                        </span>
                                 </a></li>    
-                        </ul>
+                            </ul>
+                        </div>
+                        <div class="main-footer__bottom-developed second-footer__bottom-developed">
+                            <p>Разработано</p>
+                            <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="27" height="34" viewBox="0 0 27 34">
+                                <image id="htmlacademy.svg" width="27" height="34" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAiCAYAAACuoaIwAAACqElEQVRIia1X21HjQBCcoxyALgPxd3/IEWBnYH74xY7AEMGhCAQR2EQgiAARAeISQBmciQBqjh5da7W7kii6SmV5H9Pz3tWPP7/OxUEmIgmeDFOn+E3xGBo8BxF5wViN/zbXYiYij/izcFlHgMlXkeWVgMwlYY2ePBbUtNb2Mql5wTzUrpvRxp8QNgXViLVK+FdfjmhwKtFYtHKPvrBZY1N63D+IKWQpksmI9H1HcfkWMhVWiMgrgr5BfHNYqeOXvV0eDJGtSdiNiByLyB5z1yIyF5F7Uibq2hBZRm6qIfTKk0QNLF3i3dyc9iR6yMxlz+SypVNbPlRYt4F1r7C8E08mu4y4bCz22Kfx/A2lVz6yYsBljEef5sABc8dwbekj2490meJBRLbwxLo3+4kG8lrvMNl6Qt3omjPEagdLM2fNAm5slWGynFL9uie+ixMQvIA0geACpKaAKfUPep692ztSdgetLK19zTZD4LeI0RX2FpjXsVskmr6/u5YJ+dm0CdVNAevOEOMS2Weo4Z1OkoWK+hRW5eR7zr5bKnwbG4x1iCyBoBNKBK6bezwypfuHyHLqBiUSYYm5EofhqObLmPVGPrHDrxJcwKoLJEKGxJiMmGUp3PZGjbZEPJvejv9osL+HEFlFPW4LkjvEL/UUsCDzcuzzlUuQzGBnlnWKLWLptjRrwNFmwGTPgcxqYNGSrgZWdzUdLb7GbcdNS2Ydng9M3+HHrrWuMQ+4zJQyxXT9xq7fCTLO0tnaTdQtHiSQwd0kt7ZlbnQ1NfLBewVhhVAYUUVxPIgnQdwYpJH+aMicNRzjTomEstGy64a0du8VfF9ZUOrPqZV14PtkcsHHjkDbO5SBEatwDUOs2EeRGdQ6tcT9PgudeT1MuX6r9uoiS/1ot+hBRD4AxHzKgMSsZIcAAAAASUVORK5CYII="></image>
+                              </svg>
+                            </a>                           
+                        </div>
                     </div>
-                    <div class="main-footer__bottom-developed">
-                        <p>Разработано</p>
-                        <a href="#">
-                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="27" height="34" viewBox="0 0 27 34">
-                            <image id="htmlacademy.svg" width="27" height="34" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAiCAYAAACuoaIwAAACqElEQVRIia1X21HjQBCcoxyALgPxd3/IEWBnYH74xY7AEMGhCAQR2EQgiAARAeISQBmciQBqjh5da7W7kii6SmV5H9Pz3tWPP7/OxUEmIgmeDFOn+E3xGBo8BxF5wViN/zbXYiYij/izcFlHgMlXkeWVgMwlYY2ePBbUtNb2Mql5wTzUrpvRxp8QNgXViLVK+FdfjmhwKtFYtHKPvrBZY1N63D+IKWQpksmI9H1HcfkWMhVWiMgrgr5BfHNYqeOXvV0eDJGtSdiNiByLyB5z1yIyF5F7Uibq2hBZRm6qIfTKk0QNLF3i3dyc9iR6yMxlz+SypVNbPlRYt4F1r7C8E08mu4y4bCz22Kfx/A2lVz6yYsBljEef5sABc8dwbekj2490meJBRLbwxLo3+4kG8lrvMNl6Qt3omjPEagdLM2fNAm5slWGynFL9uie+ixMQvIA0geACpKaAKfUPep692ztSdgetLK19zTZD4LeI0RX2FpjXsVskmr6/u5YJ+dm0CdVNAevOEOMS2Weo4Z1OkoWK+hRW5eR7zr5bKnwbG4x1iCyBoBNKBK6bezwypfuHyHLqBiUSYYm5EofhqObLmPVGPrHDrxJcwKoLJEKGxJiMmGUp3PZGjbZEPJvejv9osL+HEFlFPW4LkjvEL/UUsCDzcuzzlUuQzGBnlnWKLWLptjRrwNFmwGTPgcxqYNGSrgZWdzUdLb7GbcdNS2Ydng9M3+HHrrWuMQ+4zJQyxXT9xq7fCTLO0tnaTdQtHiSQwd0kt7ZlbnQ1NfLBewVhhVAYUUVxPIgnQdwYpJH+aMicNRzjTomEstGy64a0du8VfF9ZUOrPqZV14PtkcsHHjkDbO5SBEatwDUOs2EeRGdQ6tcT9PgudeT1MuX6r9uoiS/1ot+hBRD4AxHzKgMSsZIcAAAAASUVORK5CYII="></image>
-                          </svg>
-                        </a>                           
-                    </div>
-                    
+                </div>
                 
-                
-            
         </footer>
     </main>  
 </body>
