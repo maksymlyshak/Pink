@@ -3,15 +3,265 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <title>Pink</title>
+    <title>Конкурс</title>
 </head>
 <body>
     <header class="main-header">
-
+        <div class="container">
+            <div class="main-header__wrapper">
+                <div class="main-header__logos">
+                    <a class="main-header__logo-mobile" href="#">
+                     <img src="img/logotype-white-mobile.svg.png" alt="Pink Logo">
+                    </a>
+                    <a class="main-header__logo-tablet" href="#">
+                     <img src="img/logotype-white-tablet.svg.png" alt="Pink Logo">
+                    </a>
+                    <a class="main-header__logo-desktop" href="#">
+                     <img src="img/logotype-white-desktop.svg.png" alt="Pink Logo">
+                    </a>
+                </div>
+                <nav class="main-header__nav">
+                    <ul class="main-header__nav-links">
+                        <li class="main-header__nav-links-item">
+                            <a href="index.html">Главная</a></li>
+                        <li class="main-header__nav-links-item">
+                            <a href="photo.html">Фотографии</a></li>
+                        <li class="main-header__nav-links-item">
+                            <a href="form.html">Конкурс</a></li>
+                        <li class="main-header__nav-links-item">
+                            <a href="#">HTML Academy</a></li>
+                    </ul>
+                </nav>
+            </div>  
+        </div>
     </header>
-    
+    <section class="header-intro">
+        <div class="header-intro__inner-photo">
+            <p>Конкурс на самое безбашенное <br>
+                 путешествие с Пинк</p>
+        </div>   
+    </section>
+    <main class="main-page">
+        <div class="posts-title">
+            <p class="posts__title-text">
+                Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль<br>
+                   на вашу бонусную карту! Пожалуйста, заполните форму ниже:
+            </p>
+        </div>
+        <div class="main-info">
+            <div class="container">
+                <div class="main-info__desktop-flex">
+                    <div class="main-info__form">
+                    <div class="main-info__form-column">
+                        <p>Фамилия:</p>
+                        <input type="text" id="text-name" placeholder="Укажите фамилию *" class="main-info__form--name">
+                        <label for="text-name"></label>
+                    </div>
+                    <div class="main-info__form-column">
+                        <p>Имя:</p>
+                        <input type="text" id="text-surname" placeholder="Введите ваше имя *" class="main-info__form--name">
+                        <label for="text-surname"></label>
+                    </div>
+                    <div class="main-info__form-column">
+                        <p>Отчество:</p>
+                        <input type="text" id="text-middle" placeholder="Ну и отчество тоже" class="main-info__form--name">
+                        <label for="text-middle"></label> 
+                    </div>                   
+                    </div>
+                    <div class="main-info__application main-info__application-tablet">
+                    <fieldset>
+                        <legend>С каким приложением путешествовали?</legend>
+                        <ul class="main-info__application-buttons">
+                            <li class="main-info__application-buttons__btn">
+                                <input type="radio" class="buttons--btn"> Pink для iOS
+                            </li>
+                            <li class="main-info__application-buttons__btn">
+                                <input type="radio" class="buttons--btn"> Pink для Android
+                            </li>
+                            <li class="main-info__application-buttons__btn">
+                                <input type="radio" class="buttons--btn"> Windows Phone
+                            </li>
+                        </ul>
+                    </fieldset>
+                    </div>
+                </div>
+                <div class="main-info__achives">
+                    <h4>Ваши безбашенные достижения в путешествии</h4>
+                    <ul class="main-info__achives-checkbox">
+                        <li class="checkbox__buttons">
+                            <input class="checkbox__buttons--btn" id="checkbox-selfie" type="checkbox" checked="">
+                            <label for="checkbox-selfie">Сделал селфи с акулой</label>
+                        </li>
+                        <li class="checkbox__buttons">
+                            <input class="checkbox__buttons--btn" id="checkbox-burn" type="checkbox" checked="">
+                            <label for="checkbox-burn">Обгорел на пляже</label>
+                        </li>
+                        <li class="checkbox__buttons">                         
+                            <input class="checkbox__buttons--btn" id="checkbox-see" type="checkbox">
+                            <label for="checkbox-see">Видел Чака Норриса</label>
+                        </li>
+                        <li class="checkbox__buttons">
+                            <input class="checkbox__buttons--btn" id="checkbox-buy" type="checkbox">
+                            <label for="checkbox-buy">Накупил сувениров</label>
+                        </li>
+                        <li class="checkbox__buttons">
+                            <input class="checkbox__buttons--btn" id="checkbox-keep" type="checkbox" checked="">
+                            <label for="checkbox-keep">Удержал башню</label>
+                        </li>
+                        <li class="checkbox__buttons">
+                            <input class="checkbox__buttons--btn" id="checkbox-destroy" type="checkbox">
+                            <label for="checkbox-destroy">Разгромил отель</label>
+                        </li>
+                    </ul>  
+                </div>
+                <div class="main-info__data">
+                <fieldset class="main-info__data-tablet">
+                    <legend>Контактная информация</legend>
+                    <div class="main-info__data-tablet-flex">
+                        <p>Номер телефона</p>
+                        <input class="main-info__data-number" id="data-number" type="text" placeholder="Номер, пожалуйста">
+                        <label for="data-number">Номер телефона</label>
+                    </div>
+                    <div class="main-info__data--phone">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="19" viewBox="0 0 20 19">
+                        <image id="phone.svg" width="20" height="19" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAATCAYAAACQjC21AAABTUlEQVQ4jZ2U0W3CQBBEX5ALIBWE/OUzHQQqCF98OxWYVEA6ACogJYQKgA6cVOASXEK0yqy03NmOxUgnWXt7s7czt777eVohTIEl8ALMgDnDOAMNcAG+gNaynbAEtiK9BUb2DnwWwDNwuJEodmcctRFW2TbsgGMWvcYrsE5i1US6pThKI6TTOWiGvrsKLic9utWqfkrkOGmt3YS09UIOOelFibYeFDPHP8I32qtlxFQvw9DGZxNRjjDqzVxNg5MsrZusCfo5DsodJEzJrPUF8Ki1SLTLSCNh182cwM3wAr03LQbIaq1TGMOtCGsNRCTFJ2XeQUZwPrbYJnvpTZu+SUFPpJSb34rtFJtl2X+oip5qseosPA970JssK3RVZKEcm39IrmAu78cmj8DeR+9eDpo+PlJjYGfMbZPEzrTesrnnwvufZQwszwjtbAvwC7MSU6uJiet7AAAAAElFTkSuQmCC"></image>
+                        </svg>
+                    </div>  
+                     <div class="main-info__data-tablet-flex">                      
+                        <p>Адрес почты</p>
+                        <input class="main-info__data-email" id="data-email" type="text" placeholder="Введите почту*">
+                        <label for="data-email">Адрес почты</label>
+                    </div>
+                    <div class="main-info__data--mail">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="13" viewBox="0 0 18 13">
+                        <image id="mail.svg" width="18" height="13" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAANCAYAAACkTj4ZAAAAyElEQVQokaWT0Q2CQAyGP4kDMAK++QgjuIG8+Kwb4CS6AWygbsAIxAnYQDbANJZYKMZc+JMLl17/79peWD23B1Q3YE+Y7kAujsjYHoGQkceCKmAHdC7dq9PcyoJeugqgBjZA46xfNZpTq6cXv4BiXReg1PQMuDrEJ5bpvlSPKJZh9zM3nvSbmAeQwbZAqpDUmuZA6AzOdgaqo1YRTw3RNDCUOikd07qDiNYuMlZhWkvcaQDoL2DQr9aCJSB5iaVqBST/yhJYC+RvaQkoyODXK4IAAAAASUVORK5CYII="></image>
+                        </svg>
+                    </div>                        
+                </fieldset>
+                <div class="main-info__data-mobile">
+                    <p>Номер телефона</p>
+                    <input class="main-info__data-number" type="text" placeholder="Номер, пожалуйста">
+                    <p>Адрес почты</p>
+                    <input class="main-info__data-email" type="text" placeholder="Введите почту*">
+                </div>
+                </div>
+                <div class="main-info__achives main-info__achives-tablet">
+                <fieldset class="main-info__achives-tablet-block">
+                    <legend>Ваши безбашенные достижения в путешествии</legend>
+                    <ul class="main-info__achives-checkbox">
+                        <li class="checkbox__buttons">
+                            <input class="checkbox__buttons--btn" id="checkbox-selfie" type="checkbox" checked="">
+                            <label for="checkbox-selfie">Сделал селфи с акулой</label>
+                        </li>
+                        <li class="checkbox__buttons">
+                            <input class="checkbox__buttons--btn" id="checkbox-burn" type="checkbox" checked="">
+                            <label for="checkbox-burn">Обгорел на пляже</label>
+                        </li>
+                        <li class="checkbox__buttons">                         
+                            <input class="checkbox__buttons--btn" id="checkbox-see" type="checkbox">
+                            <label for="checkbox-see">Видел Чака Норриса</label>
+                        </li>
+                        <li class="checkbox__buttons">
+                            <input class="checkbox__buttons--btn" id="checkbox-buy" type="checkbox">
+                            <label for="checkbox-buy">Накупил сувениров</label>
+                        </li>
+                        <li class="checkbox__buttons">
+                            <input class="checkbox__buttons--btn" id="checkbox-keep" type="checkbox" checked="">
+                            <label for="checkbox-keep">Удержал башню</label>
+                        </li>
+                        <li class="checkbox__buttons">
+                            <input class="checkbox__buttons--btn" id="checkbox-destroy" type="checkbox">
+                            <label for="checkbox-destroy">Разгромил отель</label>
+                        </li>
+                    </ul>
+                </fieldset>  
+                </div>
+                <div class="main-info__application">
+                <h4>С каким приложением путешествовали?</h4>
+                <ul class="main-info__application-buttons">
+                    <li class="main-info__application-buttons__btn">
+                        <input type="radio" class="buttons--btn"> Pink для iOS
+                    </li>
+                    <li class="main-info__application-buttons__btn">
+                        <input type="radio" class="buttons--btn"> Pink для Android
+                    </li>
+                    <li class="main-info__application-buttons__btn">
+                        <input type="radio" class="buttons--btn"> Windows Phone
+                    </li>
+                </ul>
+                </div>
+                <div class="main-info__emotions">
+                    <div class="main-info__emotions-mobile">
+                        <h4>Опишите свои эмоции</h4>
+                        <textarea name="text" id="" cols="27" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+                    </div>
+                    <div class="main-info__sent-btn">
+                        <button class="main-info__sent-btn--click" type="button">Отправить форму</button>
+                        <p><span>*</span> — обязательные поля</p>
+                    </div>
+                    <div class="main-info__emotions-table">
+                        <fieldset>
+                            <legend>Опишите свои эмоции</legend>
+                            <textarea name="text" id="" cols="55" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+                        </fieldset>
+                    </div>
+                    <div class="main-info__sent-btn-table">
+                        <button class="main-info__sent-btn-table--click" type="button">Отправить форму</button>
+                        <p><span>*</span> — обязательные поля</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="main-footer second-footer"> 
+            <div class="container">
+                <div class="main-footer__bottom-block second-footer__bottom-block">
+                    <div class="main-footer__bottom-logo second-footer__bottom-logo">
+                        <img class="main-footer__bottom-logo__tablet second-footer__bottom-logo__tablet" src="img/logotype-blue-tablet.svg.png" alt="logo">
+                        <img class="main-footer__bottom-logo__desktop second-footer__bottom-logo__desktop" src="img/logotype-blue-desktop.svg.png" alt="logo">
+                    </div>
+                    <div class="main-footer__bottom-social second-footer__bottom-social">
+                        <ul class="main-footer__bottom-social__lists second-footer__bottom-social__lists">
+                            <li class="main-footer__bottom-social__list second-footer__bottom-social__list">
+                                <a class="social__list-link" href="#">
+                                    <span class="link__img">
+                                        <svg class="link__img-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="14" viewBox="0 0 18 14">
+                                            <image id="twitter.svg" width="18" height="14" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAOCAYAAAAi2ky3AAAA6ElEQVQokZ2T0RHBQBRFjx0FpIR8+qMEHeDHNxWIClABqYAOUAElGA1IB5Rgrrw1GxHEncnP27dn7919aZxbw4hcNz5rDkwA338EBkBXNQckwAHofMCsgVkAwQBXYAu0nRU7BktKiHxtVKoW1XdBJJ22BC62MbZ6v7StqJMiNi1rqNiiYId8u7u9YM6yVzVHgbMqPYw4I0YVTb/o5kEb+/5RZneEf7XUinW18/0elP0ZL30FKee4pqtF2O9BkmxOf4TpTvXLPKU50ohrer89s3cuJ6vXBYEUSdPb8z/gG4BmRWMiJ+WZA+6UoS2Q+KtBqwAAAABJRU5ErkJggg=="></image>
+                                          </svg>                                              
+                                    </span>
+                                </a></li>
+                            <li class="main-footer__bottom-social__list second-footer__bottom-social__list">
+                                <a class="social__list-link" href="#">
+                                    <span class="link__img">
+                                        <svg class="link__img-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="9" height="18" viewBox="0 0 9 18">
+                                            <image id="facebook.svg" width="9" height="18" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAASCAYAAACJgPRIAAAAd0lEQVQokdWOwRFAMBBFn4wCUoKjoxJoQhuoABUpQUrIqMggMSvJwcHFP/3Z97KbbCtbRHqgAwo5zEWfgJFElBh1MX5uqgAdsBkwUgoFnHBLtdsURjt2SmuEryy+qAgl8ko6zjWuh2cHwHrJRE+vWM+++9M/JWAHqWMNv+ko7cYAAAAASUVORK5CYII="></image>
+                                          </svg>
+                                    </span>
+                                </a></li>
+                            <li class="main-footer__bottom-social__list second-footer__bottom-social__list">
+                                <a class="social__list-link" href="#">
+                                    <span class="link__img">
+                                        <svg class="link__img-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="15" height="13" viewBox="0 0 15 13">
+                                            <image id="youtube.svg" width="15" height="13" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAANCAYAAAB2HjRBAAAAnUlEQVQokZ2SwQ3CMBAEB5QCKIH8KCN0AB/e6SShA6ggdAAdmBrSAOkglIBWOiOLoHBmPvZn9rzWLfrNYQRWwB042uliaaKogAA8gNorf7IGOkAvapNwlxyR1FhIZ6FuOaW2OsHqZcmR9F92uXJEFa7/ygOwz5W1A1ugBG6FU7rYAmnimzn5CZyBk90nfJOVrimaNos6x9S0z08R4AWPfx0s4sYgwwAAAABJRU5ErkJggg=="></image>
+                                        </svg>                                              
+                                    </span>
+                            </a></li>    
+                        </ul>
+                    </div>
+                    <div class="main-footer__bottom-developed second-footer__bottom-developed">
+                        <p>Разработано</p>
+                        <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="27" height="34" viewBox="0 0 27 34">
+                            <image id="htmlacademy.svg" width="27" height="34" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAiCAYAAACuoaIwAAACqElEQVRIia1X21HjQBCcoxyALgPxd3/IEWBnYH74xY7AEMGhCAQR2EQgiAARAeISQBmciQBqjh5da7W7kii6SmV5H9Pz3tWPP7/OxUEmIgmeDFOn+E3xGBo8BxF5wViN/zbXYiYij/izcFlHgMlXkeWVgMwlYY2ePBbUtNb2Mql5wTzUrpvRxp8QNgXViLVK+FdfjmhwKtFYtHKPvrBZY1N63D+IKWQpksmI9H1HcfkWMhVWiMgrgr5BfHNYqeOXvV0eDJGtSdiNiByLyB5z1yIyF5F7Uibq2hBZRm6qIfTKk0QNLF3i3dyc9iR6yMxlz+SypVNbPlRYt4F1r7C8E08mu4y4bCz22Kfx/A2lVz6yYsBljEef5sABc8dwbekj2490meJBRLbwxLo3+4kG8lrvMNl6Qt3omjPEagdLM2fNAm5slWGynFL9uie+ixMQvIA0geACpKaAKfUPep692ztSdgetLK19zTZD4LeI0RX2FpjXsVskmr6/u5YJ+dm0CdVNAevOEOMS2Weo4Z1OkoWK+hRW5eR7zr5bKnwbG4x1iCyBoBNKBK6bezwypfuHyHLqBiUSYYm5EofhqObLmPVGPrHDrxJcwKoLJEKGxJiMmGUp3PZGjbZEPJvejv9osL+HEFlFPW4LkjvEL/UUsCDzcuzzlUuQzGBnlnWKLWLptjRrwNFmwGTPgcxqYNGSrgZWdzUdLb7GbcdNS2Ydng9M3+HHrrWuMQ+4zJQyxXT9xq7fCTLO0tnaTdQtHiSQwd0kt7ZlbnQ1NfLBewVhhVAYUUVxPIgnQdwYpJH+aMicNRzjTomEstGy64a0du8VfF9ZUOrPqZV14PtkcsHHjkDbO5SBEatwDUOs2EeRGdQ6tcT9PgudeT1MuX6r9uoiS/1ot+hBRD4AxHzKgMSsZIcAAAAASUVORK5CYII="></image>
+                          </svg>
+                        </a>                           
+                    </div>
+                </div>
+            </div>
+        
+    </footer>
+    </main> 
 </body>
 </html>
