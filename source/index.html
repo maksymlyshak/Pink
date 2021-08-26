@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="js/main.js">
     <title>Pink</title>
 </head>
 <body>
@@ -22,6 +23,9 @@
                     <a class="main-header__logo-desktop" href="#">
                      <img src="img/logotype-white-desktop.svg.png" alt="Pink Logo">
                     </a>
+                </div>
+                <div class="main-header__burger">
+                    <span></span>
                 </div>
                 <nav class="main-header__nav">
                     <ul class="main-header__nav-links">
@@ -166,26 +170,25 @@
                     25лет, водитель трамвая
                 </p>
             </div>
-            <div class="main-price__slider">
-                <ul class="main-price__slider-btns">
-                    <li class="main-price__slider-btn">
-                        <button class="slider-toggle" type="button">1</button>
+            <div class="main-price__slider-top">
+                <ul class="main-price__slider-top-btns">
+                    <li class="main-price__slider-top-btn">
+                        <input type="radio" class="slider-toggle" name="slider-top" checked>
                     </li>
                     <li class="main-price__slider-btn">
-                        <button class="slider-toggle" type="button">2</button>
+                        <input type="radio" class="slider-toggle"name="slider-top">
                     </li>
                     <li class="main-price__slider-btn">
-                        <button class="slider-toggle" type="button">3</button>
+                        <input type="radio" class="slider-toggle"name="slider-top">
                     </li>
                 </ul>
             </div>
         </div>
         <div class="main-price__table">
-            <div class="container">
                 <table class="main-price__table-info">
                     <thead>
                         <tr class="main-price__table-info__cash">
-                            <th class="main-price__table-info__cash-header">
+                            <th class="main-price__table-info__cash-header cash-header-white">
                             </th>
                             <th class="main-price__table-info__cash-header">
                                 <h5>База</h5>
@@ -222,22 +225,21 @@
                             </tr>
                     </tbody>
                 </table>
-                <div class="main-price__slider">
-                    <ul class="main-price__slider-btns">
-                        <li class="main-price__slider-btn">
-                            <button class="slider-btn-toggle" type="button">1</button>
-                        </li>
-                        <li class="main-price__slider-btn">
-                            <button class="slider-btn-toggle" type="button">2</button>
-                        </li>
-                        <li class="main-price__slider-btn">
-                            <button class="slider-btn-toggle" type="button">3</button>
-                        </li>
-                    </ul>
-                </div>
             </div>
+        </section>
+        <div class="main-price__slider-bottom">
+            <ul class="main-price__slider-bottom-btns">
+                <li class="main-price__slider-bottom-btn">
+                   <input type="radio" class="slider-toggle" name="slider-bottom" checked>
+                </li>
+                <li class="main-price__slider-btn">
+                    <input type="radio" class="slider-toggle" name="slider-bottom">
+                </li>
+                <li class="main-price__slider-btn">
+                    <input type="radio" class="slider-toggle" name="slider-bottom">
+                </li>
+            </ul>
         </div>
-    </section>
     </main>
     <footer class="main-footer">
         <div class="container">
@@ -329,5 +331,6 @@
             </div>
         </div>
     </footer>
+    <script></script>
 </body>
 </html>

@@ -41,9 +41,6 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        background-image: url(../img/Shape\ 2\ copy.png);
-        background-repeat: no-repeat;
-        background-size: cover;
     }
     &__table-info {
         border-collapse: collapse;
@@ -101,34 +98,47 @@
         color: #283645; 
     }
     &__slider {
-        margin-bottom: 200px;;
+        margin-bottom: 200px;
     }
-
 }
 
 @media @mobile {
     .main-price {
-        position: relative;
         &__users-comments {
+            position: relative;
+            bottom: 120px;
             display: flex;
             flex-direction: column-reverse;
         }
-        &__slider {
+        &__slider-top {
+            position: relative;
+            bottom: 120px;
             display: flex;
             justify-content: center;
             margin: 0;
         }
-        &__slider-btns {
+        &__slider-top-btns {
             width: 80px;
             display: flex;
             justify-content: space-between;
             align-items: center;
             padding: 0;
         }
-        .slider-toggle {
-            border: 0 solid #fff;
-            text-align: center;
-            border-radius: 50%;
+        &__slider-bottom {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            background-color: #fff;
+            padding: 0 0 180px 0;
+        }
+        &__slider-bottom-btns {
+            display: flex;
+            flex-direction: row;
+            width: 80px;
+            align-items: center;
+            justify-content: space-between;
+            margin: 0;
+            padding: 0;
         }
         &__users-comments-brackets {
             display: none;
@@ -159,11 +169,15 @@
             display: none;
             position: relative;
         }
-        &__table-info {
-            position: absolute;
-            left: -350px;
+        &__table-info {   
             width: 100%;
             margin: 0 auto;
+            &__cash-info {
+                display: none;
+            }
+        }
+        .cash-header-white {
+            display: none;
         }
     }
 }
@@ -192,23 +206,21 @@
             position: relative;
             margin: 0 0 40px 0;
         }
-        &__slider {
+        &__slider-top {
             display: flex;
+            flex-direction: row;
             justify-content: center;
             margin: 0;
         }
-        &__slider-btns {
+        &__slider-top-btns {
             width: 80px;
             display: flex;
             justify-content: space-between;
             margin: 0;
             padding: 0;
         }
-        &__slider-btn {
-            .slider-toggle {
-                border: 0 solid #fff;
-                border-radius: 50%;
-            }
+        &__slider-bottom {
+            display: none;
         }
         &__table {
             display: none;
@@ -225,8 +237,14 @@
                 }
             }
         }
-        &__slider {
+        &__slider-bottom {
             display: none;
+        }
+        &__slider-top {
+            display: none;
+        }
+        &__table-info {
+            margin: 0 0 175px 0;
         }
     }
 }
