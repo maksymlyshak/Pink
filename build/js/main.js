@@ -1,1 +1,1 @@
-document.ready(function(){$(".main-header__burger").click(function(e){$(".main-header__burger,.main-header__nav").toggleClass("active")})});
+$(document).ready(function(){$(".main-header__burger").click(function(e){$(".main-header__burger,.main-header__nav").toggleClass("active"),$("body").toggleClass("lock")})});

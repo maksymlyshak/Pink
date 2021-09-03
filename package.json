@@ -54,6 +54,7 @@
     "node": "8.12"
   },
   "dependencies": {
+    "jquery": "^3.6.0",
     "npm": "^6.14.13"
   }
 }

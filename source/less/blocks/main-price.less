@@ -7,6 +7,7 @@
     }
     &__user-comments__com {
         display: flex;
+        flex-direction: column;
         justify-content: space-between;
         align-items: center;   
     }
@@ -106,13 +107,11 @@
     .main-price {
         &__users-comments {
             position: relative;
-            bottom: 120px;
             display: flex;
             flex-direction: column-reverse;
         }
         &__slider-top {
             position: relative;
-            bottom: 120px;
             display: flex;
             justify-content: center;
             margin: 0;
@@ -235,6 +234,13 @@
                 &__info-ab {
                     margin: 0 0 200px 0 ;
                 }
+            }
+            &__com {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
             }
         }
         &__slider-bottom {

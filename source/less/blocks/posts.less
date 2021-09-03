@@ -108,7 +108,16 @@
 
 @media @mobile {
  .posts {
+     &__post-flex {
+        width: 280px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+     }
     &__post-photo {
+        
         .post-photo-tablet {
             display: none;
             }
@@ -181,7 +190,7 @@
 
 @media @desktop {
  .posts {
-     &__post-wrapper-flex {
+    &__post-wrapper-flex {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
