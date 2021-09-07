@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14.938" height="14.94" viewBox="0 0 14.938 14.94">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #bec2c7;
+        filter: url(#filter);
+      }
+    </style>
+    <filter id="filter" x="0" y="0" width="14.938" height="14.94" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#d22856"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <circle id="Shape_7_copy_3" data-name="Shape 7 copy 3" class="cls-1" cx="7.469" cy="7.47" r="7.469"/>
+</svg>

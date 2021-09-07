@@ -72,7 +72,7 @@
             margin: 0 0 30px 0;
         }
     }
-    &__application-buttons {
+    &__application-radio {
         height: 185px;
         display: flex;
         flex-direction: column;
@@ -145,8 +145,72 @@
         &__sent-btn-table {
             display: none;
         }
+        &__achives-checkbox {
+            .checkbox__buttons--btn {
+                position: absolute;
+                z-index: -1;
+                opacity: 0;
+                &+label {
+                    display: inline-flex;
+                    align-items: center;
+                    user-select: none;   
+                }
+                &+label::before {
+                    content: '';
+                    display: inline-block;
+                    width: 35px;
+                    height: 35px;
+                    flex-shrink: 0;
+                    flex-grow: 0;
+                    border: 1px solid #e5e5e5;
+                    margin-right: 0.5em;
+                    background-repeat: no-repeat;
+                    background-position: center center;
+                    background-size: 50% 50%;
+                }
+                &:checked+label::before {
+                    border-color: #e5e5e5;
+                    background-color: #fff;
+                    background-image: url("data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAQCAYAAAAS7Y8mAAABEklEQVQ4ja3TvytFYRwH4Of6MVhMFtlkYDBKycANC4NBhjsog5Lh/jfEJjIoGwoDMhpltdlMFrck9OY9dTrnXt17z/ks5/S+b0+fvr1v5Wl8XYkZwzUaPbmtYug9RtFbFpygI3jBYhnwJB4i+owZvPbljnWO3mIoolW8hY0ijVuiReCpFPqIuTQa0s0opnGDwYgu4T17KDTeQh2VHJFPW2jSeBf9mMAOfnKn/jKLy4iGq7XaCk0a1+P/NvZaNK+mmt5h+T80gfexie+IH4SXk0EvMBDRFXzkpCZwyCE2Ih5mfhTxhRR61S4qcytO4jegNQzHuYb5n2MNn+2gWTjBv3CM+bjWMRrS7IGcRqiBs25Q+AX6NTtOW9CvGwAAAABJRU5ErkJggg==");
+                }
+            }
+        }
+        &__application-radio {
+            .radio-buttons {
+                .buttons--btn {
+                position: absolute;
+                z-index: -1;
+                opacity: 0;
+                    &+label {
+                        display: inline-flex;
+                        align-items: center;
+                        user-select: none; 
+                    }
+                    &+label::before {
+                        content: '';
+                        display: inline-block;
+                        width: 35px;
+                        height: 35px;
+                        flex-shrink: 0;
+                        flex-grow: 0;
+                        border: 1px solid #adb5bd;
+                        border-radius: 50%;
+                        margin-right: 0.5em;
+                        background-repeat: no-repeat;
+                        background-position: center center;
+                        background-size: 50% 50%;
+                    }
+                    &:checked+label::before {
+                        border-color: #e5e5e5;
+                        background-color: #fff;
+                        background-image: url(../../img/form-radio.svg);
+                    }
+                }
+            }
+        }
     }
 }
+
 
 @media @tablet {
     .main-info {
@@ -215,7 +279,7 @@
         &__data--mail {
             position: relative;
             left: 482px;
-            bottom: 90px;
+            bottom: 60px;
             display: flex;
             justify-content: space-evenly;
             align-items: center;
@@ -265,9 +329,6 @@
         &__application {
             display: none;
         }
-        &__achives {
-            display: none;
-        }
         &__achives-tablet-block {
             border: 1px solid #e5e5e5;
             margin: 0 0 50px 0;
@@ -295,7 +356,7 @@
                 border: 1px solid #e5e5e5;
             }
         }
-        &__application-buttons {
+        &__application-radio {
             height: 185px;
             display: flex;
             flex-direction: column;
@@ -331,6 +392,69 @@
                 font-size: 14px;
                 line-height: 30px;
                 text-transform: uppercase;
+            }
+        }
+        &__achives-checkbox {
+            .checkbox__buttons--btn {
+                position: absolute;
+                z-index: -1;
+                opacity: 0;
+                &+label {
+                    display: inline-flex;
+                    align-items: center;
+                    user-select: none;   
+                }
+                &+label::before {
+                    content: '';
+                    display: inline-block;
+                    width: 35px;
+                    height: 35px;
+                    flex-shrink: 0;
+                    flex-grow: 0;
+                    border: 1px solid #e5e5e5;
+                    margin-right: 0.5em;
+                    background-repeat: no-repeat;
+                    background-position: center center;
+                    background-size: 50% 50%;
+                }
+                &:checked+label::before {
+                    border-color: #e5e5e5;
+                    background-color: #fff;
+                    background-image: url("data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAQCAYAAAAS7Y8mAAABEklEQVQ4ja3TvytFYRwH4Of6MVhMFtlkYDBKycANC4NBhjsog5Lh/jfEJjIoGwoDMhpltdlMFrck9OY9dTrnXt17z/ks5/S+b0+fvr1v5Wl8XYkZwzUaPbmtYug9RtFbFpygI3jBYhnwJB4i+owZvPbljnWO3mIoolW8hY0ijVuiReCpFPqIuTQa0s0opnGDwYgu4T17KDTeQh2VHJFPW2jSeBf9mMAOfnKn/jKLy4iGq7XaCk0a1+P/NvZaNK+mmt5h+T80gfexie+IH4SXk0EvMBDRFXzkpCZwyCE2Ih5mfhTxhRR61S4qcytO4jegNQzHuYb5n2MNn+2gWTjBv3CM+bjWMRrS7IGcRqiBs25Q+AX6NTtOW9CvGwAAAABJRU5ErkJggg==");
+                }
+            }
+        }
+        &__application-radio {
+            .radio-buttons {
+                .buttons--btn {
+                position: absolute;
+                z-index: -1;
+                opacity: 0;
+                    &+label {
+                        display: inline-flex;
+                        align-items: center;
+                        user-select: none; 
+                    }
+                    &+label::before {
+                        content: '';
+                        display: inline-block;
+                        width: 35px;
+                        height: 35px;
+                        flex-shrink: 0;
+                        flex-grow: 0;
+                        border: 1px solid #adb5bd;
+                        border-radius: 50%;
+                        margin-right: 0.5em;
+                        background-repeat: no-repeat;
+                        background-position: center center;
+                        background-size: 50% 50%;
+                    }
+                    &:checked+label::before {
+                        border-color: #e5e5e5;
+                        background-color: #fff;
+                        background-image: url(../../img/form-radio.svg);
+                    }
+                }
             }
         }
         &__emotions-table {
@@ -428,7 +552,7 @@
         }
         &__data--phone {
             position: relative;
-            right: 168px;
+            right: 126px;
             top: 4px;
             display: flex;
             justify-content: center;
@@ -443,7 +567,7 @@
         }
         &__data--mail {
             position: relative;
-            right: 168px;
+            right: 126px;
             top: 1px;
             display: flex;
             justify-content: center;
@@ -472,9 +596,6 @@
         }
         &__application-tablet {
             display: block;
-        }
-        &__achives {
-            display: none;
         }
         &__achives-tablet {
             display: block;
@@ -514,6 +635,75 @@
         }
         &__data-mobile {
             display: none;
+        }
+        &__achives {
+            display: none;
+        }
+        &__achives-tablet {
+            display: block;
+        }
+        &__achives-checkbox {
+            .checkbox__buttons--btn {
+                position: absolute;
+                z-index: -1;
+                opacity: 0;
+                &+label {
+                    display: inline-flex;
+                    align-items: center;
+                    user-select: none;   
+                }
+                &+label::before {
+                    content: '';
+                    display: inline-block;
+                    width: 35px;
+                    height: 35px;
+                    flex-shrink: 0;
+                    flex-grow: 0;
+                    border: 1px solid #e5e5e5;
+                    margin-right: 0.5em;
+                    background-repeat: no-repeat;
+                    background-position: center center;
+                    background-size: 50% 50%;
+                }
+                &:checked+label::before {
+                    border-color: #e5e5e5;
+                    background-color: #fff;
+                    background-image: url("data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAQCAYAAAAS7Y8mAAABEklEQVQ4ja3TvytFYRwH4Of6MVhMFtlkYDBKycANC4NBhjsog5Lh/jfEJjIoGwoDMhpltdlMFrck9OY9dTrnXt17z/ks5/S+b0+fvr1v5Wl8XYkZwzUaPbmtYug9RtFbFpygI3jBYhnwJB4i+owZvPbljnWO3mIoolW8hY0ijVuiReCpFPqIuTQa0s0opnGDwYgu4T17KDTeQh2VHJFPW2jSeBf9mMAOfnKn/jKLy4iGq7XaCk0a1+P/NvZaNK+mmt5h+T80gfexie+IH4SXk0EvMBDRFXzkpCZwyCE2Ih5mfhTxhRR61S4qcytO4jegNQzHuYb5n2MNn+2gWTjBv3CM+bjWMRrS7IGcRqiBs25Q+AX6NTtOW9CvGwAAAABJRU5ErkJggg==");
+                }
+            }
+        }
+        &__application-radio {
+            .radio-buttons {
+                .buttons--btn {
+                position: absolute;
+                z-index: -1;
+                opacity: 0;
+                    &+label {
+                        display: inline-flex;
+                        align-items: center;
+                        user-select: none; 
+                    }
+                    &+label::before {
+                        content: '';
+                        display: inline-block;
+                        width: 35px;
+                        height: 35px;
+                        flex-shrink: 0;
+                        flex-grow: 0;
+                        border: 1px solid #adb5bd;
+                        border-radius: 50%;
+                        margin-right: 0.5em;
+                        background-repeat: no-repeat;
+                        background-position: center center;
+                        background-size: 50% 50%;
+                    }
+                    &:checked+label::before {
+                        border-color: #e5e5e5;
+                        background-color: #fff;
+                        background-image: url(../../img/form-radio.svg);
+                    }
+                }
+            }
         }
         &__emotions-table {
             margin: 0 0 50px 0;
