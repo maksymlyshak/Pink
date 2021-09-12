@@ -60,6 +60,12 @@
             padding: 15px 75px 15px 15px;
             border: 1px solid #e5e5e5;
             border-radius: 3px;
+            input:hover {
+                border: 1px solid #000;
+                &:active {
+                    border: 1px solid #ff0000;
+                }
+            }
     }
     &__application {
         margin: 0 0 85px 0;
@@ -96,6 +102,7 @@
         }
     }
     &__emotions-mobile {
+        position: relative;
         margin: 0 0 50px 0;
     }
     &__sent-btn {
@@ -145,6 +152,30 @@
         &__sent-btn-table {
             display: none;
         }
+        &__form-column {
+            input:hover {
+                border: 1px solid #000;
+                &:active {
+                    border: 1px solid #ff0000;
+                }
+            }
+        }
+        &__data-number {
+            input:hover {
+                border: 1px solid #000;
+                &:active {
+                    border: 1px solid #ff0000;
+                }
+            }
+        }
+        &__data-email {
+            input:hover {
+                border: 1px solid #000;
+                &:active {
+                    border: 1px solid #ff0000;
+                }
+            }
+        }
         &__achives-checkbox {
             .checkbox__buttons--btn {
                 position: absolute;
@@ -175,9 +206,15 @@
                 }
             }
         }
+        
         &__application-radio {
-            .radio-buttons {
-                .buttons--btn {
+            .radio__buttons {
+                display: flex;
+                flex-direction: row-reverse;
+                justify-content: flex-end;
+                align-items: center;
+            }
+                .radio__buttons--btn {
                 position: absolute;
                 z-index: -1;
                 opacity: 0;
@@ -203,9 +240,54 @@
                     &:checked+label::before {
                         border-color: #e5e5e5;
                         background-color: #fff;
-                        background-image: url(../../img/form-radio.svg);
+                        background-image: url(../../img/radio-red.png);
                     }
                 }
+        }
+        &__sent-btn {
+            height: 140px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0 0 65px 0;
+            p {
+                font-size: 14px;
+                line-height: 18px;
+                color: #000;
+                text-transform: uppercase;
+            }
+            span {
+                color: red;
+            }
+        }
+        &__sent-btn--click {
+            &.active {
+                display: block;
+            }
+            border: 1px solid #2aab6d;
+            border-radius: 3px;
+            text-transform: uppercase;
+            font-size: 18px;
+            line-height: 30px;
+            background-color: #2aab6d;
+            padding: 20px 50px;
+            color: #fff;
+            white-space: nowrap;
+            &:hover {
+                color: #fff;
+                background-color: #1c9b5e;
+                border: 1px solid #1c9b5e;
+            }
+            &:active {
+                background-color: #1c9b5e;
+                border: 1px solid #1c9b5e;
+                color: #61b98f;
+            }
+            &:disabled {
+                background-color: #e5e5e5;
+                border: 1px solid #e5e5e5;
+                color: #fff;
             }
         }
     }
@@ -224,6 +306,7 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
+            flex-wrap: wrap;
             margin: 0;
             padding: 45px 60px 0 60px;
             border: 1px solid #e5e5e5;
@@ -246,6 +329,10 @@
                 line-height: 30px;
             }
         }
+        &__data-tablet-flex {
+            width: 532px;
+            height: 90px;
+        }
         &__data-number {
             width: 390px;
             border-color: #e5e5e5;
@@ -253,6 +340,12 @@
             margin: 0 0 10px 0;
             border-radius: 1px;
             border: 1px solid #e5e5e5;
+            input:hover {
+                border: 1px solid #000;
+                &:active {
+                    border: 1px solid #ff0000;
+                }
+            }
         }
         &__data-email {
             width: 390px;
@@ -260,6 +353,12 @@
             border-collapse: collapse;
             margin: 0 0 10px 0;
             border: 1px solid #e5e5e5;
+            input:hover {
+                border: 1px solid #000;
+                &:active {
+                    border: 1px solid #ff0000;
+                }
+            }
         }
         &__data--phone {
             position: relative;
@@ -278,8 +377,8 @@
         }
         &__data--mail {
             position: relative;
-            left: 482px;
-            bottom: 60px;
+            left: 481px;
+            bottom: 90px;
             display: flex;
             justify-content: space-evenly;
             align-items: center;
@@ -306,6 +405,12 @@
             text-align: center;
             justify-content: space-between;
             align-items: baseline;
+            input:hover {
+                border: 1px solid #000;
+                &:active {
+                    border: 1px solid #ff0000;
+                }
+            }
         }
         &__form--name {
             width: 100%;
@@ -362,13 +467,13 @@
             flex-direction: column;
             justify-content: space-between;
         }
-        &__achives-tablet {
-            display: block;
-        }
         &__emotions-mobile {
             display: none;
         }
         &__sent-btn {
+            display: none;
+        }
+        &__achives {
             display: none;
         }
         &__sent-btn-table--click {
@@ -380,6 +485,21 @@
             background-color: #2aab6d;
             padding: 20px 55px;
             color: #fff;
+            &:hover {
+                color: #fff;
+                background-color: #1c9b5e;
+                border: 1px solid #1c9b5e;
+            }
+            &:active {
+                background-color: #1c9b5e;
+                border: 1px solid #1c9b5e;
+                color: #61b98f;
+            }
+            &:disabled {
+                background-color: #e5e5e5;
+                border: 1px solid #e5e5e5;
+                color: #fff;
+            }
             }
         &__sent-btn-table {
             display: flex;
@@ -426,6 +546,10 @@
         }
         &__application-radio {
             .radio-buttons {
+                display: flex;
+                flex-direction: row-reverse;
+                justify-content: flex-end;
+                align-items: center;
                 .buttons--btn {
                 position: absolute;
                 z-index: -1;
@@ -458,6 +582,7 @@
             }
         }
         &__emotions-table {
+            position: relative;
             margin: 0 0 50px 0;
             fieldset {
                 display: flex;
@@ -486,7 +611,7 @@
         &__desktop-flex {
             display: flex;
             justify-content: space-between;
-            align-items: center;
+            align-items: flex-end;
         }
         &__form {
             width: 440px;
@@ -496,9 +621,16 @@
             display: flex;
             justify-content: space-between;
             align-items: baseline;
+            input:hover {
+                border: 1px solid #000;
+                &:active {
+                    border: 1px solid #ff0000;
+                }
+            }
         }
         &__application-tablet {
-            width: 440px; 
+            width: 440px;
+            margin: 0 0 40px 0; 
             fieldset {
                 border: 1px solid #e5e5e5;
                 border-radius: 3px;
@@ -546,9 +678,21 @@
         }
         &__data-number {
             margin: 0 0 20px 0;
+            input:hover {
+                border: 1px solid #000;
+                &:active {
+                    border: 1px solid #ff0000;
+                }
+            }
         }
         &__data-email {
             margin: 0 0 20px 0;
+            input:hover {
+                border: 1px solid #000;
+                &:active {
+                    border: 1px solid #ff0000;
+                }
+            }
         }
         &__data--phone {
             position: relative;
@@ -598,7 +742,6 @@
             display: block;
         }
         &__achives-tablet {
-            display: block;
             width: 100%;
             margin: 0 0 50px 0;
             fieldset {
@@ -674,6 +817,10 @@
         }
         &__application-radio {
             .radio-buttons {
+                display: flex;
+                flex-direction: row-reverse;
+                justify-content: flex-end;
+                align-items: center;
                 .buttons--btn {
                 position: absolute;
                 z-index: -1;
@@ -706,6 +853,7 @@
             }
         }
         &__emotions-table {
+            position: relative;
             margin: 0 0 50px 0;
             fieldset {
                 border: 1px solid #e5e5e5;
@@ -743,6 +891,21 @@
             background-color: #2aab6d;
             padding: 20px 55px;
             color: #fff;
+            &:hover {
+                color: #fff;
+                background-color: #1c9b5e;
+                border: 1px solid #1c9b5e;
+            }
+            &:active {
+                background-color: #1c9b5e;
+                border: 1px solid #1c9b5e;
+                color: #61b98f;
+            }
+            &:disabled {
+                background-color: #e5e5e5;
+                border: 1px solid #e5e5e5;
+                color: #fff;
+            }
         }
     }
 }

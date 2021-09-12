@@ -19,6 +19,14 @@
 
 @media @mobile {
     .designer {
+        &__wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        &__photo {
+            margin: 0 auto;
+        }
         &__tools-buttons {
             margin: 0 0 40px 0;
         }
@@ -42,6 +50,7 @@
             display: none;
         }
         &__buttons {
+        width: 100%;
             padding: 0 0 60px 0;
             height: 125px;
             display: flex;
@@ -56,6 +65,14 @@
             line-height: 18px;
             font-weight: bold;
             padding: 15px 85px;
+            &:hover {
+                background-color: #d22856;
+                color: #fff;
+            }
+            &:active {
+                background-color: #d22856;
+                color: #dc577b;
+            }
         }
         &__buttons-btn--cancel {
             border: 3px solid #dddfe0;
@@ -66,6 +83,16 @@
             line-height: 18px;
             font-weight: bold;
             padding: 15px 85px;
+            &:hover {
+                border: 2px solid #b5b9be;
+                color: #b5b9be;
+                background-color: #fff;
+            }
+            &:active {
+                background-color: #b5b9be;
+                border: 2px solid #b5b9be;
+                color: #c5c8cc;
+            }
         }
         &__photo {
             margin: 0 0 45px 0;
@@ -128,6 +155,14 @@
             line-height: 18px;
             font-weight: bold;
             padding: 15px 85px;
+            &:hover {
+                background-color: #d22856;
+                color: #fff;
+            }
+            &:active {
+                background-color: #d22856;
+                color: #dc577b;
+            }
         }
         &__buttons-btn--cancel {
             border: 3px solid #dddfe0;
@@ -138,6 +173,16 @@
             line-height: 18px;
             font-weight: bold;
             padding: 15px 85px;
+            &:hover {
+                border: 2px solid #b5b9be;
+                color: #b5b9be;
+                background-color: #fff;
+            }
+            &:active {
+                background-color: #b5b9be;
+                border: 2px solid #b5b9be;
+                color: #c5c8cc;
+            }
         }
         .btn-mobile {
             display: none;
@@ -193,6 +238,14 @@
             font-weight: bold;
             padding: 20px 35px;
             text-align: center;
+            &:hover {
+                background-color: #d22856;
+                color: #fff;
+            }
+            &:active {
+                background-color: #d22856;
+                color: #dc577b;
+            }
         }
         &__buttons-btn--cancel {
             width: 180px;
@@ -205,6 +258,16 @@
             font-weight: bold;
             padding: 20px 35px;
             text-align: center;
+            &:hover {
+                border: 2px solid #b5b9be;
+                color: #b5b9be;
+                background-color: #fff;
+            }
+            &:active {
+                background-color: #b5b9be;
+                border: 2px solid #b5b9be;
+                color: #c5c8cc;
+            }
         }
         &__scale {
             display: none;

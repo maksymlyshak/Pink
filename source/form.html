@@ -74,12 +74,12 @@
                         <label for="text-middle"></label> 
                     </div>                   
                     </div>
-                    <div class="main-info__application main-info__application-tablet">
+                    <div class="main-info__application-tablet">
                     <fieldset>
                         <legend>С каким приложением путешествовали?</legend>
                         <ul class="main-info__application-radio">
                             <li class="radio-buttons">
-                                <input type="radio" class="buttons--btn" name="use" id="buttons-ios"> Pink для iOS
+                                <input type="radio" class="buttons--btn" name="use" id="buttons-ios" checked> Pink для iOS
                                 <label for="buttons-ios"></label>
                             </li>
                             <li class="radio-buttons">
@@ -154,7 +154,7 @@
                     <input class="main-info__data-email" type="text" placeholder="Введите почту*">
                 </div>
                 </div>
-                <div class="main-info__achives main-info__achives-tablet">
+                <div class="main-info__achives-tablet">
                 <fieldset class="main-info__achives-tablet-block">
                     <legend>Ваши безбашенные достижения в путешествии</legend>
                     <ul class="main-info__achives-checkbox">
@@ -188,16 +188,16 @@
                 <div class="main-info__application">
                 <h4>С каким приложением путешествовали?</h4>
                 <ul class="main-info__application-radio">
-                    <li class="radio-buttons">
-                        <input type="radio" class="buttons--btn" name="use" id="buttons-ios" checked> Pink для iOS
+                    <li class="radio__buttons">
+                        <input type="radio" class="radio__buttons--btn" name="use" id="buttons-ios" checked> Pink для iOS
                         <label for="buttons-ios"></label>
                     </li>
-                    <li class="radio-buttons">
-                        <input type="radio" class="buttons--btn" name="use" id="buttons-android"> Pink для Android
+                    <li class="radio__buttons">
+                        <input type="radio" class="radio__buttons--btn" name="use" id="buttons-android"> Pink для Android
                         <label for="buttons-android"></label>
                     </li>
-                    <li class="radio-buttons">
-                        <input type="radio" class="buttons--btn" name="use" id="buttons-windows"> Windows Phone
+                    <li class="radio__buttons">
+                        <input type="radio" class="radio__buttons--btn" name="use" id="buttons-windows"> Windows Phone
                         <label for="buttons-windows"></label>
                     </li>
                 </ul>
@@ -224,11 +224,12 @@
                 </div>
             </div>
         </div>
+            <div class="container">
                 <div class="fail-popup" style="display: none;">
                     <div class="fail-popup__block">
                         <h5>Что-то пошло не так!</h5>
                         <p>Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-                        <button class="block-button">Ок</button>
+                        <button class="fail-button" type="button">Ок</button>
                     </div>
                 </div>
                 <div class="send-popup" style="display: none;">
@@ -236,9 +237,10 @@
                         <h5>Ваша заявка отправлена</h5>
                         <p>Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и 
                             оповестим вас.</p>
-                        <button class="block-button">Закрыть окно</button>
+                        <button class="send-button" type="button">Закрыть окно</button>
                     </div>
                 </div>
+            </div>
         </main>
         <footer class="main-footer second-footer"> 
             <div class="container">

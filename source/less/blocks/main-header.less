@@ -93,6 +93,12 @@
             &:not(:last-child) {
                 margin: 0;
             }
+            a:hover {
+                color: #d22856;
+                &:active {
+                    opacity: 0.6;
+                }
+            }
         }
         &__nav-links-item:nth-child(2) {
             border: 0 solid #000;
@@ -224,6 +230,12 @@
             &:not(:last-child) {
                 margin: 0;
             }
+            a:hover {
+                color: #d22856;
+                &:active {
+                    opacity: 0.6;
+                }
+            }
         }
         &__nav-links-item:nth-child(2) {
             border: 0 solid #000;
@@ -301,8 +313,23 @@
 @media @desktop {
     .main-header {
         &__logo-mobile {
-            display: none;
-            
+            display: none;     
+        }
+        &__logos:hover {
+            color: #d22856;
+            &:active {
+                color: #fff;
+                opacity: 0.6;
+            }
+        }
+        &__nav {
+            a:hover {
+                color: #d22856;
+                &:active {
+                    color: #fff;
+                    opacity: 0.6;
+                }
+            }
         }
         &__logo-tablet {
             display: none;

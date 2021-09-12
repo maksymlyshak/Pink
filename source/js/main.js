@@ -4,3 +4,14 @@ $(document).ready(function(){
         $('body').toggleClass('lock')
     }); 
 });
+$(document).ready(function() {
+    $('.main-info__sent-btn--click').click(function(event) {
+        $('.main-info__sent-btn--click,.fail-block,.send-block').toggleClass('active');
+    });
+});
+$(document).ready(function() {
+    $('.fail-block,.send-block').click(function(event) {
+        $('.fail-block,.send-block').toggleClass('off');
+        $('body').toggleClass('lock')
+    });
+});
