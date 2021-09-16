@@ -75,8 +75,7 @@ abbr[title] {
   /* 1 */
   text-decoration: underline;
   /* 2 */
-  -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted;
+  text-decoration: underline dotted;
   /* 2 */
 }
 /**
@@ -1246,7 +1245,8 @@ template {
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
   }
-  .main-price__slider-top {
+  .main-price__radio {
+    width: 100%;
     position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1254,10 +1254,12 @@ template {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin: 0;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 0 0 110px 0;
   }
-  .main-price__slider-top-btns {
-    width: 80px;
+  .main-price__radio-slider {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1268,6 +1270,45 @@ template {
         -ms-flex-align: center;
             align-items: center;
     padding: 0;
+  }
+  .main-price__radio-slider .radio-slider--toggle {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+  }
+  .main-price__radio-slider .radio-slider--toggle + label {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+  }
+  .main-price__radio-slider .radio-slider--toggle + label::before {
+    content: '';
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+    -webkit-box-flex: 0;
+        -ms-flex-positive: 0;
+            flex-grow: 0;
+    border: 1px solid #adb5bd;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+  }
+  .main-price__radio-slider .radio-slider--toggle + label::before:not(:last-child) {
+    margin-right: 0.5em;
+  }
+  .main-price__radio-slider .radio-slider--toggle:checked + label::before {
+    border-color: #e5e5e5;
+    background-color: #fff;
   }
   .main-price__slider-bottom {
     display: -webkit-box;
@@ -1337,9 +1378,6 @@ template {
     padding: 25px 90px;
     white-space: nowrap;
   }
-  .main-price__slider-top {
-    margin: 0 0 110px 0;
-  }
 }
 @media (min-width: 768px) and (max-width: 1199px) {
   .main-price__user-comments__com-person__info-ab {
@@ -1370,7 +1408,7 @@ template {
   .main-price__table-info__cash-body {
     padding: 10px 60px;
   }
-  .main-price__slider-top {
+  .main-price__radio {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1383,7 +1421,7 @@ template {
             justify-content: center;
     margin: 0 0 110px 0 ;
   }
-  .main-price__slider-top-btns {
+  .main-price__radio-slider {
     width: 80px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1421,7 +1459,7 @@ template {
   .main-price__slider-bottom {
     display: none;
   }
-  .main-price__slider-top {
+  .main-price__radio {
     display: none;
   }
   .main-price__table-info {
@@ -2691,7 +2729,6 @@ template {
         -ms-flex-align: center;
             align-items: center;
     -webkit-user-select: none;
-       -moz-user-select: none;
         -ms-user-select: none;
             user-select: none;
   }
@@ -2744,7 +2781,6 @@ template {
         -ms-flex-align: center;
             align-items: center;
     -webkit-user-select: none;
-       -moz-user-select: none;
         -ms-user-select: none;
             user-select: none;
   }
@@ -3109,7 +3145,6 @@ template {
         -ms-flex-align: center;
             align-items: center;
     -webkit-user-select: none;
-       -moz-user-select: none;
         -ms-user-select: none;
             user-select: none;
   }
@@ -3162,7 +3197,6 @@ template {
         -ms-flex-align: center;
             align-items: center;
     -webkit-user-select: none;
-       -moz-user-select: none;
         -ms-user-select: none;
             user-select: none;
   }
@@ -3463,7 +3497,6 @@ template {
         -ms-flex-align: center;
             align-items: center;
     -webkit-user-select: none;
-       -moz-user-select: none;
         -ms-user-select: none;
             user-select: none;
   }
@@ -3516,7 +3549,6 @@ template {
         -ms-flex-align: center;
             align-items: center;
     -webkit-user-select: none;
-       -moz-user-select: none;
         -ms-user-select: none;
             user-select: none;
   }

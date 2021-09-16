@@ -19,7 +19,7 @@ var pump = require('pump');
 var htmlmin = require('gulp-htmlmin');
 
 
-gulp.task("css", function () {
+gulp.task("css", async function (done) {
   return gulp.src("source/less/style.less")
     .pipe(plumber())
     .pipe(less())
@@ -31,6 +31,7 @@ gulp.task("css", function () {
     .pipe(rename("style.min.css"))
     .pipe(gulp.dest("build/css"))
     .pipe(server.stream());
+  done();
 });
 
 gulp.task("images", function() {
