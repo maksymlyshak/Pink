@@ -9,7 +9,7 @@
     <title>Конкурс</title>
 </head>
 <body>
-    <header class="main-header">
+    <header class="main-header">    
         <div class="container">
             <div class="main-header__wrapper">
                 <div class="main-header__logos">
@@ -29,7 +29,7 @@
                 <nav class="main-header__nav">
                     <ul class="main-header__nav-links">
                         <li class="main-header__nav-links-item">
-                            <a href="index.html">Главная</a></li>
+                            <a href="#">Главная</a></li>
                         <li class="main-header__nav-links-item">
                             <a href="photo.html">Фотографии</a></li>
                         <li class="main-header__nav-links-item">
@@ -40,207 +40,38 @@
                 </nav>
             </div>  
         </div>
-    </header>
+    </header>          
     <section class="header-intro">
-        <div class="header-intro__inner-photo">
-            <p>Конкурс на самое безбашенное <br>
-                 путешествие с Пинк</p>
-        </div>   
-    </section>
+		<div class="header-intro__form">
+			<p>Конкурс на самое<br> безбашенное<br> путешествие с Пинк</p>
+		</div>
+	</section>
     <main class="main-page">
-        <div class="posts-title">
-            <p class="posts__title-text">
-                Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль<br>
-                   на вашу бонусную карту! Пожалуйста, заполните форму ниже:
-            </p>
-        </div>
-        <div class="main-info">
-            <div class="container">
-                <div class="main-info__desktop-flex">
-                    <div class="main-info__form">
-                    <div class="main-info__form-column">
-                        <p>Фамилия:</p>
-                        <input type="text" id="text-name" placeholder="Укажите фамилию *" class="main-info__form--name">
-                        <label for="text-name"></label>
-                    </div>
-                    <div class="main-info__form-column">
-                        <p>Имя:</p>
-                        <input type="text" id="text-surname" placeholder="Введите ваше имя *" class="main-info__form--name">
-                        <label for="text-surname"></label>
-                    </div>
-                    <div class="main-info__form-column">
-                        <p>Отчество:</p>
-                        <input type="text" id="text-middle" placeholder="Ну и отчество тоже" class="main-info__form--name">
-                        <label for="text-middle"></label> 
-                    </div>                   
-                    </div>
-                    <div class="main-info__application-tablet">
-                    <fieldset>
-                        <legend>С каким приложением путешествовали?</legend>
-                        <ul class="main-info__application-radio">
-                            <li class="radio-buttons">
-                                <input type="radio" class="buttons--btn" name="use" id="buttons-ios" checked=""> Pink для iOS
-                                <label for="buttons-ios"></label>
-                            </li>
-                            <li class="radio-buttons">
-                                <input type="radio" class="buttons--btn" name="use" id="buttons-android"> Pink для Android
-                                <label for="buttons-android"></label>
-                            </li>
-                            <li class="radio-buttons">
-                                <input type="radio" class="buttons--btn" name="use" id="buttons-windows"> Windows Phone
-                                <label for="buttons-windows"></label>
-                            </li>
-                        </ul>
-                    </fieldset>
-                    </div>
+        <div class="container">
+            <div class="main-form">
+                <div class="main-form__title">
+                   <p>Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!</p>
+                   <span class="tablet">Пожалуйста, заполните форму ниже:</span> 
                 </div>
-                <div class="main-info__achives">
-                    <h4>Ваши безбашенные достижения в путешествии</h4>
-                    <ul class="main-info__achives-checkbox">
-                        <li class="checkbox__buttons">
-                            <input class="checkbox__buttons--btn" id="checkbox-selfie" type="checkbox" checked="">
-                            <label for="checkbox-selfie">Сделал селфи с акулой</label>
-                        </li>
-                        <li class="checkbox__buttons">
-                            <input class="checkbox__buttons--btn" id="checkbox-burn" type="checkbox" checked="">
-                            <label for="checkbox-burn">Обгорел на пляже</label>
-                        </li>
-                        <li class="checkbox__buttons">                         
-                            <input class="checkbox__buttons--btn" id="checkbox-see" type="checkbox">
-                            <label for="checkbox-see">Видел Чака Норриса</label>
-                        </li>
-                        <li class="checkbox__buttons">
-                            <input class="checkbox__buttons--btn" id="checkbox-buy" type="checkbox">
-                            <label for="checkbox-buy">Накупил сувениров</label>
-                        </li>
-                        <li class="checkbox__buttons">
-                            <input class="checkbox__buttons--btn" id="checkbox-keep" type="checkbox" checked="">
-                            <label for="checkbox-keep">Удержал башню</label>
-                        </li>
-                        <li class="checkbox__buttons">
-                            <input class="checkbox__buttons--btn" id="checkbox-destroy" type="checkbox">
-                            <label for="checkbox-destroy">Разгромил отель</label>
-                        </li>
-                    </ul>  
-                </div>
-                <div class="main-info__data">
-                <fieldset class="main-info__data-tablet">
-                    <legend>Контактная информация</legend>
-                    <div class="main-info__data-tablet-flex">
-                        <p>Номер телефона</p>
-                        <input class="main-info__data-number" id="data-number" type="text" placeholder="Номер, пожалуйста">
-                        <label for="data-number">Номер телефона</label>
-                    </div>
-                    <div class="main-info__data--phone">
-                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="19" viewBox="0 0 20 19">
-                        <image id="phone.svg" width="20" height="19" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAATCAYAAACQjC21AAABTUlEQVQ4jZ2U0W3CQBBEX5ALIBWE/OUzHQQqCF98OxWYVEA6ACogJYQKgA6cVOASXEK0yqy03NmOxUgnWXt7s7czt777eVohTIEl8ALMgDnDOAMNcAG+gNaynbAEtiK9BUb2DnwWwDNwuJEodmcctRFW2TbsgGMWvcYrsE5i1US6pThKI6TTOWiGvrsKLic9utWqfkrkOGmt3YS09UIOOelFibYeFDPHP8I32qtlxFQvw9DGZxNRjjDqzVxNg5MsrZusCfo5DsodJEzJrPUF8Ki1SLTLSCNh182cwM3wAr03LQbIaq1TGMOtCGsNRCTFJ2XeQUZwPrbYJnvpTZu+SUFPpJSb34rtFJtl2X+oip5qseosPA970JssK3RVZKEcm39IrmAu78cmj8DeR+9eDpo+PlJjYGfMbZPEzrTesrnnwvufZQwszwjtbAvwC7MSU6uJiet7AAAAAElFTkSuQmCC"></image>
-                        </svg>
-                    </div>  
-                     <div class="main-info__data-tablet-flex">                      
-                        <p>Адрес почты</p>
-                        <input class="main-info__data-email" id="data-email" type="text" placeholder="Введите почту*">
-                        <label for="data-email">Адрес почты</label>
-                    </div>
-                    <div class="main-info__data--mail">
-                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="13" viewBox="0 0 18 13">
-                        <image id="mail.svg" width="18" height="13" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAANCAYAAACkTj4ZAAAAyElEQVQokaWT0Q2CQAyGP4kDMAK++QgjuIG8+Kwb4CS6AWygbsAIxAnYQDbANJZYKMZc+JMLl17/79peWD23B1Q3YE+Y7kAujsjYHoGQkceCKmAHdC7dq9PcyoJeugqgBjZA46xfNZpTq6cXv4BiXReg1PQMuDrEJ5bpvlSPKJZh9zM3nvSbmAeQwbZAqpDUmuZA6AzOdgaqo1YRTw3RNDCUOikd07qDiNYuMlZhWkvcaQDoL2DQr9aCJSB5iaVqBST/yhJYC+RvaQkoyODXK4IAAAAASUVORK5CYII="></image>
-                        </svg>
-                    </div>                        
-                </fieldset>
-                <div class="main-info__data-mobile">
-                    <p>Номер телефона</p>
-                    <input class="main-info__data-number" type="text" placeholder="Номер, пожалуйста">
-                    <p>Адрес почты</p>
-                    <input class="main-info__data-email" type="text" placeholder="Введите почту*">
-                </div>
-                </div>
-                <div class="main-info__achives-tablet">
-                <fieldset class="main-info__achives-tablet-block">
-                    <legend>Ваши безбашенные достижения в путешествии</legend>
-                    <ul class="main-info__achives-checkbox">
-                        <li class="checkbox__buttons">
-                            <input class="checkbox__buttons--btn" id="checkbox-selfie" type="checkbox" checked="">
-                            <label for="checkbox-selfie">Сделал селфи с акулой</label>
-                        </li>
-                        <li class="checkbox__buttons">
-                            <input class="checkbox__buttons--btn" id="checkbox-burn" type="checkbox" checked="">
-                            <label for="checkbox-burn">Обгорел на пляже</label>
-                        </li>
-                        <li class="checkbox__buttons">                         
-                            <input class="checkbox__buttons--btn" id="checkbox-see" type="checkbox">
-                            <label for="checkbox-see">Видел Чака Норриса</label>
-                        </li>
-                        <li class="checkbox__buttons">
-                            <input class="checkbox__buttons--btn" id="checkbox-buy" type="checkbox">
-                            <label for="checkbox-buy">Накупил сувениров</label>
-                        </li>
-                        <li class="checkbox__buttons">
-                            <input class="checkbox__buttons--btn" id="checkbox-keep" type="checkbox" checked="">
-                            <label for="checkbox-keep">Удержал башню</label>
-                        </li>
-                        <li class="checkbox__buttons">
-                            <input class="checkbox__buttons--btn" id="checkbox-destroy" type="checkbox">
-                            <label for="checkbox-destroy">Разгромил отель</label>
-                        </li>
-                    </ul>
-                </fieldset>  
-                </div>
-                <div class="main-info__application">
-                <h4>С каким приложением путешествовали?</h4>
-                <ul class="main-info__application-radio">
-                    <li class="radio__buttons">
-                        <input type="radio" class="radio__buttons--btn" name="use" id="buttons-ios" checked=""> Pink для iOS
-                        <label for="buttons-ios"></label>
-                    </li>
-                    <li class="radio__buttons">
-                        <input type="radio" class="radio__buttons--btn" name="use" id="buttons-android"> Pink для Android
-                        <label for="buttons-android"></label>
-                    </li>
-                    <li class="radio__buttons">
-                        <input type="radio" class="radio__buttons--btn" name="use" id="buttons-windows"> Windows Phone
-                        <label for="buttons-windows"></label>
-                    </li>
-                </ul>
-                </div>
-                <div class="main-info__emotions">
-                    <div class="main-info__emotions-mobile">
-                        <h4>Опишите свои эмоции</h4>
-                        <textarea name="text" id="" cols="27" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
-                    </div>
-                    <div class="main-info__sent-btn">
-                        <button class="main-info__sent-btn--click" type="button">Отправить форму</button>
-                        <p><span>*</span> — обязательные поля</p>
-                    </div>
-                    <div class="main-info__emotions-table">
-                        <fieldset>
-                            <legend>Опишите свои эмоции</legend>
-                            <textarea name="text" id="" cols="55" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
-                        </fieldset>
-                    </div>
-                    <div class="main-info__sent-btn-table">
-                        <button class="main-info__sent-btn-table--click" type="button">Отправить форму</button>
-                        <p><span>*</span> — обязательные поля</p>
+                <div class="main-form__info">
+                    <div class="main-form__wrapper">
+                        <div class="input-wrapper">
+                            <label for="surname">Фамилия:</label>
+                            <input type="text" id="surname" placeholder="Укажите фамилию*">
+                        </div>
+                        <div class="input-wrapper">
+                            <label for="name">Имя:</label>
+                            <input type="text" id="name" placeholder="Введите ваше имя*">
+                        </div>
+                        <div class="input-wrapper">
+                            <label for="patronymic">Отчество:</label>
+                            <input type="text" id="patronymic" placeholder="Ну и отчество тоже*">
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-            <div class="container">
-                <div class="fail-popup" style="display: none;">
-                    <div class="fail-popup__block">
-                        <h5>Что-то пошло не так!</h5>
-                        <p>Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-                        <button class="fail-button" type="button">Ок</button>
-                    </div>
-                </div>
-                <div class="send-popup" style="display: none;">
-                    <div class="send-popup__block">
-                        <h5>Ваша заявка отправлена</h5>
-                        <p>Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и 
-                            оповестим вас.</p>
-                        <button class="send-button" type="button">Закрыть окно</button>
-                    </div>
-                </div>
-            </div>
+
         </main>
         <footer class="main-footer second-footer"> 
             <div class="container">

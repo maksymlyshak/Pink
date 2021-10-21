@@ -8,6 +8,7 @@ var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
 var server = require("browser-sync").create();
 var csso = require("gulp-csso");
+var cleanCSS = require('gulp-clean-css')
 var imagemin = require("gulp-imagemin");
 var webp = require("gulp-webp");
 var svgstore = require("gulp-svgstore");
@@ -27,7 +28,8 @@ gulp.task("css", async function (done) {
       autoprefixer()
     ]))
     .pipe(gulp.dest("build/css"))
-    .pipe(csso())
+    // .pipe(csso())
+    .pipe(cleanCSS())
     .pipe(rename("style.min.css"))
     .pipe(gulp.dest("build/css"))
     .pipe(server.stream());

@@ -1,0 +1,41 @@
+.main-form {
+    &__title {
+        text-align: center;
+        line-height: 30px;
+        color: #283645;
+        padding-top: 30px;
+        max-width: 280px;
+        margin: 0 auto;
+    }
+    &__info {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media @mobile {
+    .main-form {
+        &__info {
+            margin-bottom: 40px;
+        }
+        .tablet {
+            display: none;
+        }
+        &__wrapper {
+            .input-wrapper {
+                width: 100%;
+                color: #d22856;
+                font-size: 14px;
+                line-height: 30px;
+                input {
+                    border: 2px solid #eeeeee;
+                    padding: 15px 15px;
+                    font-size: 18px;
+                    line-height: 30px;
+                    width: 548px;
+    
+                }
+            }
+        }
+    }
+}

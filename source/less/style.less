@@ -17,7 +17,7 @@
 @import "blocks/posts";
 @import "blocks/designer";
 @import "blocks/second-footer";
-@import "blocks/main-info";
+@import "blocks/main-form";
 @import "blocks/fail-popup";
 @import "blocks/send-popup"; 
 
@@ -33,7 +33,7 @@ body {
     width: 100%;
 }
 
-.container {	
+.container {
 	margin: 0 auto;
     padding: 0 20px;
 }
@@ -45,6 +45,10 @@ img {
 
 li {
     list-style: none;
+}
+
+@media @mobile {
+    padding: 0;
 }
 
 @media @tablet {
