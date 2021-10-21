@@ -370,7 +370,7 @@ template {
     background-color: rgba(28, 37, 48, 0.8);
   }
   .main-header .container {
-    max-width: 340px;
+    width: auto;
   }
   .main-header__wrapper {
     width: 100%;
@@ -2484,6 +2484,7 @@ template {
 @media (max-width: 767px) {
   .main-form__info {
     margin-bottom: 40px;
+    padding: 0px;
   }
   .main-form .tablet {
     display: none;
@@ -2499,7 +2500,7 @@ template {
     padding: 15px 15px;
     font-size: 18px;
     line-height: 30px;
-    width: 548px;
+    width: 92%;
   }
 }
 .fail-popup__block h5 {
@@ -2969,6 +2970,8 @@ body {
   width: 100%;
 }
 .container {
+  width: 100%;
+  max-width: 1170px;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -2978,17 +2981,4 @@ img {
 }
 li {
   list-style: none;
-}
-@media (max-width: 767px) {
-  padding: 0;
-}
-@media (min-width: 768px) and (max-width: 1199px) {
-  .container {
-    max-width: 720px;
-  }
-}
-@media (min-width: 1200px) {
-  .container {
-    max-width: 900px;
-  }
 }
