@@ -1753,6 +1753,16 @@ template {
     line-height: 30px;
   }
 }
+.posts__post {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+}
 .posts__title-text {
   font-size: 14px;
   font-weight: lighter;
@@ -1781,6 +1791,11 @@ template {
   line-height: 24px;
   font-weight: bold;
 }
+.posts__post-info {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
 .posts__post-info .description {
   margin-bottom: 25px;
 }
@@ -1798,6 +1813,7 @@ template {
   text-transform: uppercase;
   text-align: center;
   color: #d22856;
+  margin-top: auto;
 }
 .posts__post-info__bottom span {
   display: -webkit-box;
@@ -2970,7 +2986,6 @@ body {
   width: 100%;
 }
 .container {
-  width: 100%;
   max-width: 1170px;
   margin: 0 auto;
   padding: 0 20px;
