@@ -11,6 +11,55 @@
         padding-left: 20px;
         padding-right: 20px;
     }
+    &__wrapper {
+        .input-wrapper {
+            input {
+                &:hover {
+                    border: 2px solid #283645;
+                }
+                &:focus {
+                    border: 2px solid #d22856;
+                }
+            }
+        }
+    }
+    &__achievements {
+        &-list {
+            .visually-hidden:not(focus):not(:active),
+            input[type="checbox"].visually-hidden,
+            input[type="radio"].visually-hidden {
+                position: absolute;
+                width: 1px;
+                height: 1px;
+                margin: -1px;
+                border: 0;
+                padding: 0;
+                white-space: nowrap;
+                overflow: hidden;
+            }
+            input[type="checkbox"] + label::before {
+                content: "";
+                position: absolute;
+                left: 0;
+                width: 35px;
+                height: 35px;
+                flex-shrink: 0;
+                flex-grow: 0;
+                border: 2px solid #e5e5e5;
+                background-color: #fff;
+                -webkit-transition: 0.1s;
+                transition: 0.1s;
+            }
+            input[type="checkbox"]:checked + label::before {
+                content: "";
+                left: 0;
+                background-image: url(../../img/tick.svg);
+                background-size: 22px 16px;
+                background-position: center center;
+                background-repeat: no-repeat;
+            }   
+        }
+    }
 }
 
 @media @mobile {
@@ -31,10 +80,48 @@
                 input {
                     border: 2px solid #eeeeee;
                     padding: 15px 15px;
+                    margin-bottom: 10px;
                     font-size: 18px;
                     line-height: 30px;
-                    width: 92%;
-    
+                    width: 89%;
+                }
+                label {
+                    text-transform: uppercase;
+                    color: red;
+                    margin-bottom: 5px;
+                    padding-left: 10px;
+                }
+            }
+        }
+        &__achievements {
+            &-title {
+                font-size: 14px;
+                line-height: 18px;
+                text-align: center;
+                color: #d22856;
+                text-transform: uppercase;
+                padding-bottom: 20px;
+            }
+            &-list {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                .input-wrapper {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: baseline;
+                    margin-bottom: 50px;
+                    cursor: pointer;
+                    label {
+                        position: relative;
+                        font-size: 18px;
+                        line-height: 30px;
+                        padding-left: 70px;
+                        color: #283645;
+                        text-transform: none;
+                        display: block;
+                    }
                 }
             }
         }
